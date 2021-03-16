@@ -33,7 +33,11 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jTabbedPane1" alignment="0" pref="736" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPane1" pref="716" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -850,7 +854,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jButton2" pref="77" max="32767" attributes="0"/>
+                          <Component id="jButton2" pref="81" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
@@ -963,10 +967,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel5" pref="731" max="32767" attributes="0"/>
-                          <Component id="jPanel10" alignment="1" pref="731" max="32767" attributes="0"/>
-                          <Component id="jPanel11" pref="731" max="32767" attributes="0"/>
-                          <Component id="jPanel4" pref="731" max="32767" attributes="0"/>
+                          <Component id="jPanel5" pref="711" max="32767" attributes="0"/>
+                          <Component id="jPanel10" alignment="1" pref="711" max="32767" attributes="0"/>
+                          <Component id="jPanel11" pref="711" max="32767" attributes="0"/>
+                          <Component id="jPanel4" pref="711" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   </Group>
@@ -1004,7 +1008,7 @@
                               <Component id="jPanel6" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel7" pref="383" max="32767" attributes="0"/>
+                              <Component id="jPanel7" pref="363" max="32767" attributes="0"/>
                               <Component id="jPanel9" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2809,7 +2813,7 @@
                                       <Component id="jComboBox24" max="32767" attributes="0"/>
                                       <Component id="jComboBox13" max="32767" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="28" max="32767" attributes="0"/>
+                                  <EmptySpace pref="32" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jComboBox26" alignment="1" min="-2" max="-2" attributes="0"/>
                                       <Component id="jComboBox62" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -5739,7 +5743,7 @@
                           <Component id="jSeparator20" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
                           <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="183" max="32767" attributes="0"/>
+                          <EmptySpace pref="171" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>

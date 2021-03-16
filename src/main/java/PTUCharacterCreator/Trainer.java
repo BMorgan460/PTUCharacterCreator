@@ -93,10 +93,15 @@ public class Trainer {
         fSpDef = 0;
         lSpd = 0;
         fSpd = 0;
+        pc = new ArrayList<>();
+        inventory = new ArrayList<>();
+        currency = 0;
         setMaps();
     }
     
     private void setMaps(){
+        skills = new HashMap<>();
+        skillBonuses = new HashMap<>();
         setSkills();
         setBonuses();
     }
