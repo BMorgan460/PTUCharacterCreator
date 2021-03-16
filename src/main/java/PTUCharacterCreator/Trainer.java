@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import PTUCharacterCreator.Feats.*;
+import PTUCharacterCreator.Edges.*;
 
 /**
  * Storage for Trainer Information
@@ -93,7 +94,6 @@ public class Trainer {
         lSpd = 0;
         fSpd = 0;
         setMaps();
-        Feature f = new Ace_Trainer();
     }
     
     private void setMaps(){
@@ -225,6 +225,7 @@ public class Trainer {
             if(tags.contains("[+Speed]")){
                 fSpd++;
             }
+            //TODO Add in [+Attack or Special Attack]
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
         } catch (NoSuchMethodException ex) {
@@ -255,6 +256,14 @@ public class Trainer {
         skills.put(e, 5);
     }
     
+    private void skillUpMaster(String e){
+        skills.put(e, 6);
+    }
+    
+    private void skillUpVirtuoso(String e){
+        skills.put(e, 8);
+    }
+    
     public boolean addEdge(String e){
         try {
             Class<Edge> edge = (Class<Edge>)Class.forName(e);
@@ -265,9 +274,14 @@ public class Trainer {
                 }else if(e.contains("Adept Skills")){
                     skillUpAdept(e.substring(13));
                 }else if(e.contains("Expert Skills")){
-                    skillUpExpert(e.substring(13));
+                    skillUpExpert(e.substring(14));
+                }else if(e.contains("Master Skills")){
+                    skillUpMaster(e.substring(14));
+                }else if(e.contains("Virtuoso")){
+                    skillUpVirtuoso(e.substring(9));
                 }
                 edges.add(tempEdge);
+                return true;
             }else{
                 return false;
             }
@@ -291,5 +305,11 @@ public class Trainer {
     }
     
     
+    
+    public String generateJSON(){
+        String json = "{\"CharType\":1,\"nickname\":\"\",\"species\":\"Human\",\"type1\":\"\",\"type2\":\"\",\"Level\":1,\"EXP\":0,\"EXP_max\":10,\"AP\":5,\"AP_max\":5,\"HeldItem\":\"\",\"Gender\":\"\",";
+        
+        return json;
+    }
     
 }
