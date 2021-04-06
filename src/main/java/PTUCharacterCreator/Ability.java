@@ -20,4 +20,13 @@ public class Ability {
     public String getEffect(){
         return effect;
     }
+    
+    @Override
+    public boolean equals(Object o){
+        if(o.getClass() == Ability.class){
+            Ability a = (Ability) o;
+            return this.name.equals(a.getName());
+        }
+        return false;
+    }
 }

@@ -2,14 +2,6 @@ PTUCharacterCreator/Main.java
  PTUCharacterCreator.Main
 PTUCharacterCreator/Item.java
  PTUCharacterCreator.Item
-PTUCharacterCreator/Pokemon.java
- PTUCharacterCreator.Pokemon
-PTUCharacterCreator/Ability.java
- PTUCharacterCreator.Ability
-PTUCharacterCreator/Moves.java
- PTUCharacterCreator.Moves
-PTUCharacterCreator/Edge.java
- PTUCharacterCreator.Edge
 PTUCharacterCreator/Edges/Skill_Enhancement_Intuition_Tech_Edu.java
  PTUCharacterCreator.Edges.Skill_Enhancement_Intuition_Tech_Edu
 PTUCharacterCreator/Abilities/Beautiful.java
@@ -280,8 +272,8 @@ PTUCharacterCreator/Edges/Skill_Enhancement_Pokemon_Edu_Intimidate.java
  PTUCharacterCreator.Edges.Skill_Enhancement_Pokemon_Edu_Intimidate
 PTUCharacterCreator/Edges/Skill_Enhancement_Pokemon_Edu_Focus.java
  PTUCharacterCreator.Edges.Skill_Enhancement_Pokemon_Edu_Focus
-PTUCharacterCreator/Abilities/Juicy_Energy.java
- PTUCharacterCreator.Abilities.Juicy_Energy
+PTUCharacterCreator/Edges/Master_Skills_Command.java
+ PTUCharacterCreator.Edges.Master_Skills_Command
 PTUCharacterCreator/Feats/Fossil_Restoration.java
  PTUCharacterCreator.Feats.Fossil_Restoration
 PTUCharacterCreator/Abilities/Rattled_Playtest.java
@@ -622,6 +614,8 @@ PTUCharacterCreator/Feats/Mystic_Defense.java
  PTUCharacterCreator.Feats.Mystic_Defense
 PTUCharacterCreator/Feats/Quick_Reflexes.java
  PTUCharacterCreator.Feats.Quick_Reflexes
+PTUCharacterCreator/Pokemon.java
+ PTUCharacterCreator.Pokemon
 PTUCharacterCreator/Feats/Fan_The_Flames.java
  PTUCharacterCreator.Feats.Fan_The_Flames
 PTUCharacterCreator/Abilities/Fairy_Orbs.java
@@ -2606,6 +2600,8 @@ PTUCharacterCreator/Edges/Skill_Enhancement_Stealth_Acrobatics.java
  PTUCharacterCreator.Edges.Skill_Enhancement_Stealth_Acrobatics
 PTUCharacterCreator/Edges/Skill_Enhancement_Intimidate_Pokemon_Edu.java
  PTUCharacterCreator.Edges.Skill_Enhancement_Intimidate_Pokemon_Edu
+PTUCharacterCreator/Edge.java
+ PTUCharacterCreator.Edge
 PTUCharacterCreator/Edges/Elemental_Connection_Rock.java
  PTUCharacterCreator.Edges.Elemental_Connection_Rock
 PTUCharacterCreator/Feats/Steel_Wind.java
@@ -3172,6 +3168,8 @@ PTUCharacterCreator/Abilities/Drown_Out.java
  PTUCharacterCreator.Abilities.Drown_Out
 PTUCharacterCreator/Feats/Telekinetic.java
  PTUCharacterCreator.Feats.Telekinetic
+PTUCharacterCreator/Moves.java
+ PTUCharacterCreator.Moves
 PTUCharacterCreator/Feats/Attack_Ace.java
  PTUCharacterCreator.Feats.Attack_Ace
 PTUCharacterCreator/Abilities/Confidence.java
@@ -3248,6 +3246,8 @@ PTUCharacterCreator/Abilities/Transporter_Playtest.java
  PTUCharacterCreator.Abilities.Transporter_Playtest
 PTUCharacterCreator/Feats/Fairy_Rite.java
  PTUCharacterCreator.Feats.Fairy_Rite
+PTUCharacterCreator/Ability.java
+ PTUCharacterCreator.Ability
 PTUCharacterCreator/Abilities/Thick_Fat.java
  PTUCharacterCreator.Abilities.Thick_Fat
 PTUCharacterCreator/Feats/Call_the_Current_Rank_1.java
@@ -3296,8 +3296,8 @@ PTUCharacterCreator/Feats/Learn_From_Your_Mistakes.java
  PTUCharacterCreator.Feats.Learn_From_Your_Mistakes
 PTUCharacterCreator/Abilities/Steadfast.java
  PTUCharacterCreator.Abilities.Steadfast
-PTUCharacterCreator/Edges/Master_Skills_Command.java
- PTUCharacterCreator.Edges.Master_Skills_Command
+PTUCharacterCreator/Abilities/Juicy_Energy.java
+ PTUCharacterCreator.Abilities.Juicy_Energy
 PTUCharacterCreator/Abilities/Desert_Weather_Playtest.java
  PTUCharacterCreator.Abilities.Desert_Weather_Playtest
 PTUCharacterCreator/Abilities/Needles.java
@@ -3474,9 +3474,21 @@ PTUCharacterCreator/PTUCharacterCreatorGUI.java
  PTUCharacterCreator.PTUCharacterCreatorGUI$32
  PTUCharacterCreator.PTUCharacterCreatorGUI$33
  PTUCharacterCreator.PTUCharacterCreatorGUI$34
+ PTUCharacterCreator.PTUCharacterCreatorGUI$35
+ PTUCharacterCreator.PTUCharacterCreatorGUI$36
+ PTUCharacterCreator.PTUCharacterCreatorGUI$37
+ PTUCharacterCreator.PTUCharacterCreatorGUI$38
+ PTUCharacterCreator.PTUCharacterCreatorGUI$39
  PTUCharacterCreator.PTUCharacterCreatorGUI$4
+ PTUCharacterCreator.PTUCharacterCreatorGUI$40
+ PTUCharacterCreator.PTUCharacterCreatorGUI$41
+ PTUCharacterCreator.PTUCharacterCreatorGUI$42
+ PTUCharacterCreator.PTUCharacterCreatorGUI$43
+ PTUCharacterCreator.PTUCharacterCreatorGUI$44
+ PTUCharacterCreator.PTUCharacterCreatorGUI$45
  PTUCharacterCreator.PTUCharacterCreatorGUI$5
  PTUCharacterCreator.PTUCharacterCreatorGUI$6
  PTUCharacterCreator.PTUCharacterCreatorGUI$7
  PTUCharacterCreator.PTUCharacterCreatorGUI$8
  PTUCharacterCreator.PTUCharacterCreatorGUI$9
+ PTUCharacterCreator.PTUCharacterCreatorGUI$MKeyListener

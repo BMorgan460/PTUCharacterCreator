@@ -5,8 +5,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.Iterator;
+import javax.swing.JOptionPane;
 import PTUCharacterCreator.Feats.*;
 import PTUCharacterCreator.Edges.*;
+import PTUCharacterCreator.Abilities.*;
 
 /**
  * Storage for Trainer Information
@@ -42,7 +45,8 @@ public class Trainer {
     private int lSpAtk;
     private int lSpDef;
     private int lSpd;
-    //stats from feats
+    
+    //stats from feats and other bonuses
     private int fHP;
     private int fAtk;
     private int fDef;
@@ -62,6 +66,9 @@ public class Trainer {
     //moves and abilities
     private ArrayList<Moves> moves;
     private ArrayList<Ability> abilities;
+    private int struggleDB;
+    private String stab1;
+    private String stab2;
     
     //Features and Edges
     private ArrayList<Edge> edges;
@@ -93,8 +100,14 @@ public class Trainer {
         fSpDef = 0;
         lSpd = 0;
         fSpd = 0;
+        struggleDB = 4;
         pc = new ArrayList<>();
         inventory = new ArrayList<>();
+        moves = new ArrayList();
+        abilities = new ArrayList();
+        edges = new ArrayList();
+        features = new ArrayList();
+        otherCapabilities = new ArrayList();
         currency = 0;
         setMaps();
     }
@@ -176,6 +189,7 @@ public class Trainer {
     
     public void setLevel(int level){
         this.level = level;
+        this.statPoints = level + 9;
     }
     
     public void incLHP(int lHP){
@@ -206,10 +220,13 @@ public class Trainer {
         return statPoints - lHP - lAtk - lDef - lSpAtk - lSpDef - lSpd;
     }
     
-    public void addFeature(String feature){
+    public boolean addFeature(String feature){
         try {
-            Class<Feature> feat = (Class<Feature>)Class.forName(feature);
+            Class<Feature> feat = (Class<Feature>)Class.forName("PTUCharacterCreator.Feats." + feature.replace(" ", "_"));
             Feature tempFeat = (Feature) feat.getDeclaredConstructor().newInstance();
+            if(features.contains(tempFeat)){
+                return false;
+            }
             features.add(tempFeat);
             String tags = tempFeat.getTags();
             if(tags.contains("[+HP]")){
@@ -231,21 +248,10 @@ public class Trainer {
                 fSpd++;
             }
             //TODO Add in [+Attack or Special Attack]
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (NoSuchMethodException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SecurityException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalArgumentException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InvocationTargetException ex) {
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
             Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
         }
+        return false;
     }
     
     private void skillUpBasic(String e){
@@ -269,11 +275,18 @@ public class Trainer {
         skills.put(e, 8);
     }
     
+    private void skillEnhance(String skills){
+        
+    }
+    
     public boolean addEdge(String e){
         try {
-            Class<Edge> edge = (Class<Edge>)Class.forName(e);
+            Class<Edge> edge = (Class<Edge>)Class.forName("PTUCharacterCreator.Edges." + e);
             Edge tempEdge = (Edge) edge.getDeclaredConstructor().newInstance();
             if(tempEdge.checkPrereqs(skills, edges, level)){
+                if(edges.contains(tempEdge)){
+                    return false;
+                }
                 if(e.contains("Basic Skills")){
                     skillUpBasic(e.substring(13));
                 }else if(e.contains("Adept Skills")){
@@ -285,36 +298,134 @@ public class Trainer {
                 }else if(e.contains("Virtuoso")){
                     skillUpVirtuoso(e.substring(9));
                 }
+                if(e.contains("Skill Enhancement")){
+                    
+                }
                 edges.add(tempEdge);
                 return true;
             }else{
                 return false;
             }
             
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (NoSuchMethodException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SecurityException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalArgumentException ex) {
-            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InvocationTargetException ex) {
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
             Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
         }
         return false;
     }
     
+    public boolean addMove(String name){
+        try {
+            Class<Moves> temp =
+                    (Class<Moves>)Class.forName(name);
+            Moves move = (Moves)temp.getDeclaredConstructor().newInstance();
+            if(!moves.contains(move)){
+                moves.add(move);
+                return true;
+            }
+            return false;
+        } catch (NoSuchMethodException | SecurityException | ClassNotFoundException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+    }
     
+    public boolean addAbility(String name){
+        try {
+            Class<Ability> temp =
+                    (Class<Ability>)Class.forName(name);
+            Ability ability = (Ability)temp.getDeclaredConstructor().newInstance();
+            if(!abilities.contains(ability)){
+                abilities.add(ability);
+                return true;
+            }
+            return false;
+        } catch (NoSuchMethodException | SecurityException | ClassNotFoundException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+    }
+    
+    private String movesJSON(){
+        String json = "";
+        for(int i = 1; i <= moves.size(); i++){
+            Moves move = moves.get(i - 1);
+            json += String.format("\"Move%d\":{%s},\n", i, move.toString());
+        }
+        return json;
+    }
+    
+    private String edgesJSON(){
+        String json = "";
+        for(int i = 1; i <= edges.size(); i++){
+            Edge edge = edges.get(i - 1);
+            json += String.format("\"Edge%d\":{\"Name\":\"%s\",\"Cost\":0,\"Prereq\":\"%s\",\"Info\":\"%s\"},\n", i, edge.getName(), edge.getPrereqs(), edge.getEffect());
+        }
+        return json;
+    }
+    
+    private String featsJSON(){
+        String json = "";
+        for(int i = 1; i <= features.size(); i++){
+            Feature feat = features.get(i - 1);
+            json += String.format("\"Feat%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\",\"Target\":\"%s\"},\n", i, feat.getName(), feat.getFreq(), feat.getEffect(), feat.getTarget());
+        }
+        return json;
+    }
+    
+    private String abilitiesJSON(){
+        String json = "";
+        for(int i = 1; i <= abilities.size(); i++){
+            Ability ability = abilities.get(i - 1);
+            json += String.format("\"Ability%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\"},\n", i, ability.getName(), ability.getFreq(), ability.getEffect());
+        }
+        json += "}";
+        return json;
+    }
     
     public String generateJSON(){
-        String json = "{\"CharType\":1,\"nickname\":\"\",\"species\":\"Human\",\"type1\":\"\",\"type2\":\"\",\"Level\":1,\"EXP\":0,\"EXP_max\":10,\"AP\":5,\"AP_max\":5,\"HeldItem\":\"\",\"Gender\":\"\",";
+        //CharType to Gender
+        String json = String.format("{\"CharType\":1,\n\"nickname\":\"%s\",\n\"species\":\"Human\",\n\"type1\":\"\",\"type2\":\"\",\n\"Level\":%d,\"EXP\":%d,\"EXP_max\":10,\n\"AP\":%d,\"AP_max\":%d,\n\"HeldItem\":\"\",\n\"Gender\":\"%s\",\n", name, level, exp, AP, AP, gender);
+        //Nature, Height, Weight Class
+        json += String.format("\"Nature\":\"\",\n\"Height\":\"%s\",\n\"WeightClass\":%d,\n", height, WC);
+        //base stats
+        json += String.format("\"base_HP\":%d,\"base_ATK\":%d,\"base_DEF\":%d,\"base_SPATK\":%d,\"base_SPDEF\":%d,\"base_SPEED\":%d,\n",BASE_HP, BASE_ATK, BASE_DEF, BASE_SPATK, BASE_SPDEF, BASE_SPD);
+        //modified stats
+        json += String.format("\"HP\":%d,\"ATK\":%d,\"DEF\":%d,\"SPATK\":%d,\"SPDEF\":%d,\"SPEED\":%d,\n", lHP + fHP, lAtk + fAtk, lDef + fDef, lSpAtk + fSpAtk, lSpDef + fSpDef, lSpd + fSpd);
+        //Capabilities Part 1
+        json += String.format("\"Capabilities\":{\"Overland\":%d,\"Throwing Range\":%d,\"HJ\":%d,\"LJ\":%d,\"Swim\":%d,\"Power\":%d,",overland,throwRange,hJump,lJump,swim,power);
+        //Other Capabilities
+        for(String capability : otherCapabilities){
+            json += String.format("\"%s\":\"\"", capability);
+        }
+        json += String.format("}\n");
+        //Skills
+        for(String key : skills.keySet()){
+            String temp = key.replace("Edu","Education").replace("Gen","General").replace("Tech","Technology").replace("Med","Medicine").replace("Ocu","Occult").replace("Poke","Pokemon");
+            json += String.format("\"%s\":%d",temp,skills.get(key));
+        }
+        json += "\n";
+        //Skill Ranks
+        for (String key : skillBonuses.keySet()) {
+            String temp = key.replace("Edu","Education").replace("Gen","General").replace("Tech","Technology").replace("Med","Medicine").replace("Ocu","Occult").replace("Poke","Pokemon");
+            json += String.format("\"%s\":%d",temp,skillBonuses.get(key));
+        }
+        json += "\n";
+        //Moves
+        json += movesJSON();
+        //Struggle
+        json += String.format("\"Struggle_Type\":\"Normal\",\"Struggle_DType\":\"Physical\",\"Struggle_DB\":%d,\"Struggle_Range\":\"Melee, 1 Target\",\n", struggleDB);
+        //Edges
+        json += edgesJSON();
+        //Features
+        json += featsJSON();
+        //Abilities
+        json += abilitiesJSON();
         
         return json;
+    }
+
+    void setMiscExp(int miscExp) {
+        this.exp = miscExp;
     }
     
 }

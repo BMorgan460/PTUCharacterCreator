@@ -77,4 +77,13 @@ public class Edge {
     public String getEffect(){
         return effect;
     }
+    
+    @Override
+    public boolean equals(Object o){
+        if(o.getClass() == Edge.class){
+            Edge m = (Edge) o;
+            return this.name.equals(m.getName());
+        }
+        return false;
+    }
 }

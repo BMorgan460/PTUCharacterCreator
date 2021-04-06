@@ -1,5 +1,7 @@
 package PTUCharacterCreator;
 
+import java.util.Objects;
+
 /**
  * Class to store the parent class that stores all moves
  * Originally used in PTU Random Pokemon Generator.
@@ -64,5 +66,21 @@ public class Moves {
                 , name, type, category, mDamageBase, frequency, AC, range, effects.replace('\"', '\''));
         }
         return result;
+    }
+    
+    @Override
+    public boolean equals(Object o){
+        if(o.getClass() == Moves.class){
+            Moves m = (Moves) o;
+            return this.name.equals(m.getName());
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 67 * hash + Objects.hashCode(this.name);
+        return hash;
     }
 }

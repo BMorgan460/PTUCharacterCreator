@@ -1,6 +1,5 @@
 package PTUCharacterCreator;
 
-import PTUCharacterCreator.Edge;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -14,6 +13,7 @@ public class Feature {
     protected HashMap<String,Integer> prereqs;
     protected String frequency;
     protected String effect;
+    protected String target;
     
     public Feature(){ }
     
@@ -25,8 +25,12 @@ public class Feature {
         return tags;
     }
     
+    public String getTarget(){
+        return target;
+    }
+    
     public boolean checkPrereqs(HashMap<String,Integer> skills, ArrayList<Feature> feats, ArrayList<Edge> edges, int level){
-        ArrayList<Boolean> flags = new ArrayList<Boolean>();
+        ArrayList<Boolean> flags = new ArrayList();
         for (String key : prereqs.keySet()) {
             if(skills.containsKey(key)){
                 if(skills.get(key) >= prereqs.get(key)){
@@ -96,5 +100,14 @@ public class Feature {
     
     public String getEffect(){
         return effect;
+    }
+    
+    @Override
+    public boolean equals(Object o){
+        if(o.getClass() == Feature.class){
+            Feature m = (Feature) o;
+            return this.name.equals(m.getName());
+        }
+        return false;
     }
 }
