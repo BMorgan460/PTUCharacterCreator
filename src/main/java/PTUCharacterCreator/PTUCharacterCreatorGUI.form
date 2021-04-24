@@ -89,9 +89,9 @@
                   <Group type="102" attributes="0">
                       <Component id="jPanel24" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPanel1" pref="282" max="32767" attributes="0"/>
+                      <Component id="jPanel1" pref="285" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="jPanel2" pref="723" max="32767" attributes="0"/>
+                  <Component id="jPanel2" pref="729" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -985,10 +985,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel5" pref="708" max="32767" attributes="0"/>
-                          <Component id="jPanel10" alignment="1" pref="708" max="32767" attributes="0"/>
-                          <Component id="jPanel11" pref="708" max="32767" attributes="0"/>
-                          <Component id="jPanel4" pref="708" max="32767" attributes="0"/>
+                          <Component id="jPanel5" pref="711" max="32767" attributes="0"/>
+                          <Component id="jPanel10" alignment="1" pref="711" max="32767" attributes="0"/>
+                          <Component id="jPanel11" pref="711" max="32767" attributes="0"/>
+                          <Component id="jPanel4" pref="711" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   </Group>
@@ -1004,7 +1004,7 @@
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                       <Component id="jPanel11" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Component id="jPanel4" pref="331" max="32767" attributes="0"/>
+                      <Component id="jPanel4" pref="337" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1026,7 +1026,7 @@
                               <Component id="jPanel6" alignment="0" pref="353" max="32767" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel7" pref="355" max="32767" attributes="0"/>
+                              <Component id="jPanel7" pref="358" max="32767" attributes="0"/>
                               <Component id="jPanel9" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -1114,7 +1114,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="classFeat7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="14" max="32767" attributes="0"/>
+                              <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1208,7 +1208,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="class2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="10" max="32767" attributes="0"/>
+                              <EmptySpace pref="8" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="classFeat8" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="classFeat10" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1327,7 +1327,7 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="classFeat21" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="14" max="32767" attributes="0"/>
+                              <EmptySpace pref="13" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1642,7 +1642,7 @@
                                   <Component id="genFeat17" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="18" max="32767" attributes="0"/>
+                          <EmptySpace pref="15" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1878,11 +1878,8 @@
                           <Component id="jPanel14" linkSize="23" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel12" pref="293" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel22" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jPanel12" pref="298" max="32767" attributes="0"/>
+                          <Component id="jPanel22" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -2547,7 +2544,7 @@
                           <Component id="jLabel51" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel52" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="396" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="397" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2966,21 +2963,21 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField8" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName1" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel104" min="-2" max="-2" attributes="0"/>
+                                  <Component id="type1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
+                                  <Component id="category1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel106" min="-2" max="-2" attributes="0"/>
+                                  <Component id="db1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel107" min="-2" max="-2" attributes="0"/>
+                                  <Component id="freq1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel108" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ac1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel109" min="-2" max="-2" attributes="0"/>
+                                  <Component id="range1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="effect1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2990,14 +2987,14 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel104" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel105" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel106" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel107" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel108" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel109" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="type1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="category1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="db1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="freq1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ac1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="range1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="effect1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               </Group>
@@ -3005,44 +3002,47 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField8">
+                        <Component class="javax.swing.JTextField" name="moveName1">
+                          <Events>
+                            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="moveName1KeyPressed"/>
+                          </Events>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel104">
+                        <Component class="javax.swing.JLabel" name="type1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="--"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel105">
+                        <Component class="javax.swing.JLabel" name="category1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="--"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel106">
+                        <Component class="javax.swing.JLabel" name="db1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="--"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel107">
+                        <Component class="javax.swing.JLabel" name="freq1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="--"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel108">
+                        <Component class="javax.swing.JLabel" name="ac1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="--"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel109">
+                        <Component class="javax.swing.JLabel" name="range1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="--"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="move1">
+                        <Component class="javax.swing.JButton" name="effect1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Show Effect"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="effect1ActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
@@ -3061,7 +3061,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField12" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName2" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel128" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3085,7 +3085,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName2" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel128" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel129" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel130" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3100,7 +3100,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField12">
+                        <Component class="javax.swing.JTextField" name="moveName2">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel128">
                           <Properties>
@@ -3156,7 +3156,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField13" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName3" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel135" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3180,7 +3180,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName3" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel135" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel136" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel137" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3195,7 +3195,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField13">
+                        <Component class="javax.swing.JTextField" name="moveName3">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel135">
                           <Properties>
@@ -3251,7 +3251,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField23" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName4" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel195" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3275,7 +3275,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName4" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel195" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel196" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel197" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3290,7 +3290,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField23">
+                        <Component class="javax.swing.JTextField" name="moveName4">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel195">
                           <Properties>
@@ -3346,7 +3346,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField24" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName5" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel201" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3370,7 +3370,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField24" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName5" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel201" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel202" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel203" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3385,7 +3385,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField24">
+                        <Component class="javax.swing.JTextField" name="moveName5">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel201">
                           <Properties>
@@ -3441,7 +3441,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField25" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName6" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel207" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3465,7 +3465,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField25" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName6" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel207" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel208" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel209" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3480,7 +3480,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField25">
+                        <Component class="javax.swing.JTextField" name="moveName6">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel207">
                           <Properties>
@@ -3536,7 +3536,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField26" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName7" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel213" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3560,7 +3560,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName7" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel213" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel214" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel215" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3575,7 +3575,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField26">
+                        <Component class="javax.swing.JTextField" name="moveName7">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel213">
                           <Properties>
@@ -3631,7 +3631,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField27" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName8" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel219" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3655,7 +3655,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName8" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel219" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel220" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel221" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3670,7 +3670,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField27">
+                        <Component class="javax.swing.JTextField" name="moveName8">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel219">
                           <Properties>
@@ -3726,7 +3726,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField35" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName9" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel267" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3750,7 +3750,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField35" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName9" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel267" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel268" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel269" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3765,7 +3765,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField35">
+                        <Component class="javax.swing.JTextField" name="moveName9">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel267">
                           <Properties>
@@ -3821,7 +3821,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField36" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName10" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel273" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3845,7 +3845,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField36" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName10" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel273" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel274" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel275" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3860,7 +3860,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField36">
+                        <Component class="javax.swing.JTextField" name="moveName10">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel273">
                           <Properties>
@@ -3916,7 +3916,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField37" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName11" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel279" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -3940,7 +3940,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField37" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName11" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel279" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel280" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel281" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -3955,7 +3955,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField37">
+                        <Component class="javax.swing.JTextField" name="moveName11">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel279">
                           <Properties>
@@ -4011,7 +4011,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField38" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName12" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel285" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -4035,7 +4035,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField38" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName12" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel285" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel286" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel287" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4050,7 +4050,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField38">
+                        <Component class="javax.swing.JTextField" name="moveName12">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel285">
                           <Properties>
@@ -4106,7 +4106,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField39" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName13" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel291" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -4130,7 +4130,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField39" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName13" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel291" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel292" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel293" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4145,7 +4145,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField39">
+                        <Component class="javax.swing.JTextField" name="moveName13">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel291">
                           <Properties>
@@ -4201,7 +4201,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField40" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName14" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel297" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -4225,7 +4225,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField40" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName14" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel297" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel298" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel299" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4240,7 +4240,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField40">
+                        <Component class="javax.swing.JTextField" name="moveName14">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel297">
                           <Properties>
@@ -4296,7 +4296,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField41" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName15" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel303" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -4320,7 +4320,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField41" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName15" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel303" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel304" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel305" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4335,7 +4335,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField41">
+                        <Component class="javax.swing.JTextField" name="moveName15">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel303">
                           <Properties>
@@ -4391,7 +4391,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField42" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="moveName16" min="-2" pref="71" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jLabel309" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -4415,7 +4415,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jTextField42" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName16" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel309" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel310" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel311" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -4430,7 +4430,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="jTextField42">
+                        <Component class="javax.swing.JTextField" name="moveName16">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel309">
                           <Properties>

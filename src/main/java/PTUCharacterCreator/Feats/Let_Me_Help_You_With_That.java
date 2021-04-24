@@ -1,4 +1,5 @@
 package PTUCharacterCreator.Feats;
+import PTUCharacterCreator.Trainer;
 import PTUCharacterCreator.Feature;
 public class Let_Me_Help_You_With_That extends Feature {
 	{
@@ -6,6 +7,11 @@ public class Let_Me_Help_You_With_That extends Feature {
 		tags = "";
 		frequency = "Daily x3 - Full Action, Interrupt";
 		effect = "Trigger: An allied Trainer fails a Skill Check in a Skill you have Ranked at Novice or higher. Effect: The ally may re-roll the Skill Check with a Bonus equal to your Skill Rank.";
+		prereqs.put("-", 0);
 	}
 	public Let_Me_Help_You_With_That(){}
+	@Override
+	public boolean checkPrereqs(Trainer t) {
+		return true;
+	}
 }

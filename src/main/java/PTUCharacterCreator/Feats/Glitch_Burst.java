@@ -1,4 +1,5 @@
 package PTUCharacterCreator.Feats;
+import PTUCharacterCreator.Trainer;
 import PTUCharacterCreator.Feature;
 public class Glitch_Burst extends Feature {
 	{
@@ -6,6 +7,12 @@ public class Glitch_Burst extends Feature {
 		tags = "[+Special Defense]";
 		frequency = "2 AP - Swift Action";
 		effect = "Trigger: You hit with Topsy-Turvy or use another Glitch Bender Move Effect: Glitch Bursts effect depends on the triggering Move. »» Disable: The target of Disable is also Suppressed. »» Snatch: Regain one use of a Glitch Bender Move. This may only affect each Move once per Scene. »» Metronome: Generate three random Moves instead of one, and choose which Move to use. »» Topsy-Turvy: The target of Topsy-Turvy becomes Confused. They are automatically cured The Glitch Pokemon of this Confusion at the end of their next turn.";
+		prereqs.put("Glitch Shuffle", -1);
+		prereqs.put("Focus", 6);
 	}
 	public Glitch_Burst(){}
+	@Override
+	public boolean checkPrereqs(Trainer t) {
+		return t.hasFeat("Glitch Shuffle") && t.checkSkillRank("Focus",6);
+	}
 }

@@ -1,4 +1,5 @@
 package PTUCharacterCreator.Feats;
+import PTUCharacterCreator.Trainer;
 import PTUCharacterCreator.Feature;
 public class Shared_Senses extends Feature {
 	{
@@ -6,6 +7,11 @@ public class Shared_Senses extends Feature {
 		tags = "";
 		frequency = "Bind 1 AP - Swift Action";
 		effect = "Target: A Channeled Pokemon Effect: You Imprint the target for the duration of this Feature. You receive all sensory information being sensed by Imprinted Pokemon, and Imprinted Pokemon are not subject to the distance limit on Channeling. If you have Imprinted more than one Pokemon, you may only concentrate on the senses of one Pokemon at a time, and only choose one such Pokemon per round. If you stop Channeling a Pokemon, they are no longer Imprinted as well.";
+		prereqs.put("Channeler", -1);
 	}
 	public Shared_Senses(){}
+	@Override
+	public boolean checkPrereqs(Trainer t) {
+		return t.hasFeat("Channeler");
+	}
 }

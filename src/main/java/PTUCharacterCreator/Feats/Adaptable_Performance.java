@@ -1,4 +1,5 @@
 package PTUCharacterCreator.Feats;
+import PTUCharacterCreator.Trainer;
 import PTUCharacterCreator.Feature;
 public class Adaptable_Performance extends Feature {
 	{
@@ -6,6 +7,11 @@ public class Adaptable_Performance extends Feature {
 		tags = "";
 		frequency = "Scene - Free Action";
 		effect = "Trigger: Your Pokemons Turn to use a Move in a Contest Effect: Choose two of your Pokemons Moves. Your Pokemon may perform your Contest Move as if had the Contest Typing of one of your chosen Moves, and had the effects of the other. You may not use either move on the next round of the contest. This effect may be used once per Contest.";
+		prereqs.put("Coordinator", -1);
 	}
 	public Adaptable_Performance(){}
+	@Override
+	public boolean checkPrereqs(Trainer t) {
+		return t.hasFeat("Coordinator");
+	}
 }

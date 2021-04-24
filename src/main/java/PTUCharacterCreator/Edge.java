@@ -7,7 +7,7 @@ import java.util.HashMap;
  * Class used to store Edges
  * @author Blake Morgan
  */
-public class Edge {
+public abstract class Edge {
     protected String name;
     protected HashMap<String,Integer> prereqs;
     protected String effect;
@@ -16,29 +16,7 @@ public class Edge {
         return name;
     }
     
-    public boolean checkPrereqs(HashMap<String,Integer> skills, ArrayList<Edge> edges, int level){
-        boolean flag = true;
-        for (String key : prereqs.keySet()) {
-            if(skills.containsKey(key)){
-                if(skills.get(key) < prereqs.get(key)){
-                    flag = false;
-                    break;
-                }
-            }else{
-                boolean edgeFlag = false;
-                for(Edge e : edges){
-                    if(e.getName().equals(key)){
-                        edgeFlag = true;
-                    }
-                }
-                if(!edgeFlag){
-                    flag = false;
-                    break;
-                }
-            }
-        }
-        return flag;
-    }
+    public abstract boolean checkPrereqs(Trainer t);
     
     public String getPrereqs(){
         String result = "";

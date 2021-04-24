@@ -273,16 +273,16 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel102 = new javax.swing.JLabel();
         jLabel103 = new javax.swing.JLabel();
         jPanel33 = new javax.swing.JPanel();
-        jTextField8 = new javax.swing.JTextField();
-        jLabel104 = new javax.swing.JLabel();
-        jLabel105 = new javax.swing.JLabel();
-        jLabel106 = new javax.swing.JLabel();
-        jLabel107 = new javax.swing.JLabel();
-        jLabel108 = new javax.swing.JLabel();
-        jLabel109 = new javax.swing.JLabel();
-        move1 = new javax.swing.JButton();
+        moveName1 = new javax.swing.JTextField();
+        type1 = new javax.swing.JLabel();
+        category1 = new javax.swing.JLabel();
+        db1 = new javax.swing.JLabel();
+        freq1 = new javax.swing.JLabel();
+        ac1 = new javax.swing.JLabel();
+        range1 = new javax.swing.JLabel();
+        effect1 = new javax.swing.JButton();
         jPanel38 = new javax.swing.JPanel();
-        jTextField12 = new javax.swing.JTextField();
+        moveName2 = new javax.swing.JTextField();
         jLabel128 = new javax.swing.JLabel();
         jLabel129 = new javax.swing.JLabel();
         jLabel130 = new javax.swing.JLabel();
@@ -291,7 +291,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel133 = new javax.swing.JLabel();
         move5 = new javax.swing.JButton();
         jPanel39 = new javax.swing.JPanel();
-        jTextField13 = new javax.swing.JTextField();
+        moveName3 = new javax.swing.JTextField();
         jLabel135 = new javax.swing.JLabel();
         jLabel136 = new javax.swing.JLabel();
         jLabel137 = new javax.swing.JLabel();
@@ -300,7 +300,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel140 = new javax.swing.JLabel();
         move6 = new javax.swing.JButton();
         jPanel49 = new javax.swing.JPanel();
-        jTextField23 = new javax.swing.JTextField();
+        moveName4 = new javax.swing.JTextField();
         jLabel195 = new javax.swing.JLabel();
         jLabel196 = new javax.swing.JLabel();
         jLabel197 = new javax.swing.JLabel();
@@ -309,7 +309,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel200 = new javax.swing.JLabel();
         move16 = new javax.swing.JButton();
         jPanel50 = new javax.swing.JPanel();
-        jTextField24 = new javax.swing.JTextField();
+        moveName5 = new javax.swing.JTextField();
         jLabel201 = new javax.swing.JLabel();
         jLabel202 = new javax.swing.JLabel();
         jLabel203 = new javax.swing.JLabel();
@@ -318,7 +318,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel206 = new javax.swing.JLabel();
         move17 = new javax.swing.JButton();
         jPanel51 = new javax.swing.JPanel();
-        jTextField25 = new javax.swing.JTextField();
+        moveName6 = new javax.swing.JTextField();
         jLabel207 = new javax.swing.JLabel();
         jLabel208 = new javax.swing.JLabel();
         jLabel209 = new javax.swing.JLabel();
@@ -327,7 +327,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel212 = new javax.swing.JLabel();
         move18 = new javax.swing.JButton();
         jPanel52 = new javax.swing.JPanel();
-        jTextField26 = new javax.swing.JTextField();
+        moveName7 = new javax.swing.JTextField();
         jLabel213 = new javax.swing.JLabel();
         jLabel214 = new javax.swing.JLabel();
         jLabel215 = new javax.swing.JLabel();
@@ -336,7 +336,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel218 = new javax.swing.JLabel();
         move19 = new javax.swing.JButton();
         jPanel53 = new javax.swing.JPanel();
-        jTextField27 = new javax.swing.JTextField();
+        moveName8 = new javax.swing.JTextField();
         jLabel219 = new javax.swing.JLabel();
         jLabel220 = new javax.swing.JLabel();
         jLabel221 = new javax.swing.JLabel();
@@ -345,7 +345,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel224 = new javax.swing.JLabel();
         move20 = new javax.swing.JButton();
         jPanel34 = new javax.swing.JPanel();
-        jTextField35 = new javax.swing.JTextField();
+        moveName9 = new javax.swing.JTextField();
         jLabel267 = new javax.swing.JLabel();
         jLabel268 = new javax.swing.JLabel();
         jLabel269 = new javax.swing.JLabel();
@@ -354,7 +354,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel272 = new javax.swing.JLabel();
         move28 = new javax.swing.JButton();
         jPanel62 = new javax.swing.JPanel();
-        jTextField36 = new javax.swing.JTextField();
+        moveName10 = new javax.swing.JTextField();
         jLabel273 = new javax.swing.JLabel();
         jLabel274 = new javax.swing.JLabel();
         jLabel275 = new javax.swing.JLabel();
@@ -363,7 +363,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel278 = new javax.swing.JLabel();
         move29 = new javax.swing.JButton();
         jPanel63 = new javax.swing.JPanel();
-        jTextField37 = new javax.swing.JTextField();
+        moveName11 = new javax.swing.JTextField();
         jLabel279 = new javax.swing.JLabel();
         jLabel280 = new javax.swing.JLabel();
         jLabel281 = new javax.swing.JLabel();
@@ -372,7 +372,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel284 = new javax.swing.JLabel();
         move30 = new javax.swing.JButton();
         jPanel64 = new javax.swing.JPanel();
-        jTextField38 = new javax.swing.JTextField();
+        moveName12 = new javax.swing.JTextField();
         jLabel285 = new javax.swing.JLabel();
         jLabel286 = new javax.swing.JLabel();
         jLabel287 = new javax.swing.JLabel();
@@ -381,7 +381,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel290 = new javax.swing.JLabel();
         move31 = new javax.swing.JButton();
         jPanel65 = new javax.swing.JPanel();
-        jTextField39 = new javax.swing.JTextField();
+        moveName13 = new javax.swing.JTextField();
         jLabel291 = new javax.swing.JLabel();
         jLabel292 = new javax.swing.JLabel();
         jLabel293 = new javax.swing.JLabel();
@@ -390,7 +390,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel296 = new javax.swing.JLabel();
         move32 = new javax.swing.JButton();
         jPanel66 = new javax.swing.JPanel();
-        jTextField40 = new javax.swing.JTextField();
+        moveName14 = new javax.swing.JTextField();
         jLabel297 = new javax.swing.JLabel();
         jLabel298 = new javax.swing.JLabel();
         jLabel299 = new javax.swing.JLabel();
@@ -399,7 +399,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel302 = new javax.swing.JLabel();
         move33 = new javax.swing.JButton();
         jPanel67 = new javax.swing.JPanel();
-        jTextField41 = new javax.swing.JTextField();
+        moveName15 = new javax.swing.JTextField();
         jLabel303 = new javax.swing.JLabel();
         jLabel304 = new javax.swing.JLabel();
         jLabel305 = new javax.swing.JLabel();
@@ -408,7 +408,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel308 = new javax.swing.JLabel();
         move34 = new javax.swing.JButton();
         jPanel68 = new javax.swing.JPanel();
-        jTextField42 = new javax.swing.JTextField();
+        moveName16 = new javax.swing.JTextField();
         jLabel309 = new javax.swing.JLabel();
         jLabel310 = new javax.swing.JLabel();
         jLabel311 = new javax.swing.JLabel();
@@ -1043,8 +1043,8 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(characterTabLayout.createSequentialGroup()
                 .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 282, Short.MAX_VALUE))
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 285, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 729, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Character", characterTab);
@@ -1117,7 +1117,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(classFeat6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(classFeat7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1168,7 +1168,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(class2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(classFeat8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(classFeat10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1242,7 +1242,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(classFeat20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(classFeat21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1321,7 +1321,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 353, Short.MAX_VALUE))
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 355, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel5Layout.setVerticalGroup(
@@ -1485,7 +1485,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                         .addComponent(genFeat18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(genFeat17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1555,10 +1555,10 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             featureTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(featureTabLayout.createSequentialGroup()
                 .addGroup(featureTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
-                    .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 708, Short.MAX_VALUE))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 711, Short.MAX_VALUE)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 711, Short.MAX_VALUE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 711, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 711, Short.MAX_VALUE))
                 .addGap(0, 0, 0))
         );
         featureTabLayout.setVerticalGroup(
@@ -1571,7 +1571,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE))
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 337, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Features", featureTab);
@@ -1942,7 +1942,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addComponent(jLabel51)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel52)
-                .addGap(0, 396, Short.MAX_VALUE))
+                .addGap(0, 397, Short.MAX_VALUE))
         );
 
         jPanel22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -2020,10 +2020,8 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(edgeTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
-                    .addGroup(edgeTabLayout.createSequentialGroup()
-                        .addGap(0, 0, 0)
-                        .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+                    .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         edgeTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPanel13, jPanel14});
@@ -2124,22 +2122,28 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
         jPanel33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel104.setText("--");
+        moveName1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                moveName1KeyPressed(evt);
+            }
+        });
 
-        jLabel105.setText("--");
+        type1.setText("--");
 
-        jLabel106.setText("--");
+        category1.setText("--");
 
-        jLabel107.setText("--");
+        db1.setText("--");
 
-        jLabel108.setText("--");
+        freq1.setText("--");
 
-        jLabel109.setText("--");
+        ac1.setText("--");
 
-        move1.setText("Show Effect");
-        move1.addActionListener(new java.awt.event.ActionListener() {
+        range1.setText("--");
+
+        effect1.setText("Show Effect");
+        effect1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move1ActionPerformed(evt);
+                effect1ActionPerformed(evt);
             }
         });
 
@@ -2149,21 +2153,21 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel33Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel104)
+                .addComponent(type1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel105)
+                .addComponent(category1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel106)
+                .addComponent(db1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel107)
+                .addComponent(freq1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel108)
+                .addComponent(ac1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel109)
+                .addComponent(range1)
                 .addGap(18, 18, 18)
-                .addComponent(move1)
+                .addComponent(effect1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel33Layout.setVerticalGroup(
@@ -2171,14 +2175,14 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel104)
-                    .addComponent(jLabel105)
-                    .addComponent(jLabel106)
-                    .addComponent(jLabel107)
-                    .addComponent(jLabel108)
-                    .addComponent(jLabel109)
-                    .addComponent(move1))
+                    .addComponent(moveName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(type1)
+                    .addComponent(category1)
+                    .addComponent(db1)
+                    .addComponent(freq1)
+                    .addComponent(ac1)
+                    .addComponent(range1)
+                    .addComponent(effect1))
                 .addGap(6, 6, 6))
         );
 
@@ -2209,7 +2213,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel38Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel128)
                 .addGap(18, 18, 18)
@@ -2231,7 +2235,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel38Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel128)
                     .addComponent(jLabel129)
                     .addComponent(jLabel130)
@@ -2269,7 +2273,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel39Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel135)
                 .addGap(18, 18, 18)
@@ -2291,7 +2295,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel39Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel135)
                     .addComponent(jLabel136)
                     .addComponent(jLabel137)
@@ -2329,7 +2333,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel49Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel195)
                 .addGap(18, 18, 18)
@@ -2351,7 +2355,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel49Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel195)
                     .addComponent(jLabel196)
                     .addComponent(jLabel197)
@@ -2389,7 +2393,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel50Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel201)
                 .addGap(18, 18, 18)
@@ -2411,7 +2415,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel50Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel201)
                     .addComponent(jLabel202)
                     .addComponent(jLabel203)
@@ -2449,7 +2453,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel51Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel207)
                 .addGap(18, 18, 18)
@@ -2471,7 +2475,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel51Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel207)
                     .addComponent(jLabel208)
                     .addComponent(jLabel209)
@@ -2509,7 +2513,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel52Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName7, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel213)
                 .addGap(18, 18, 18)
@@ -2531,7 +2535,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel52Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel213)
                     .addComponent(jLabel214)
                     .addComponent(jLabel215)
@@ -2569,7 +2573,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel53Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName8, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel219)
                 .addGap(18, 18, 18)
@@ -2591,7 +2595,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel53Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel219)
                     .addComponent(jLabel220)
                     .addComponent(jLabel221)
@@ -2629,7 +2633,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel34Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel267)
                 .addGap(18, 18, 18)
@@ -2651,7 +2655,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel267)
                     .addComponent(jLabel268)
                     .addComponent(jLabel269)
@@ -2689,7 +2693,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel62Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel273)
                 .addGap(18, 18, 18)
@@ -2711,7 +2715,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel62Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel273)
                     .addComponent(jLabel274)
                     .addComponent(jLabel275)
@@ -2749,7 +2753,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel63Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel279)
                 .addGap(18, 18, 18)
@@ -2771,7 +2775,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel63Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel279)
                     .addComponent(jLabel280)
                     .addComponent(jLabel281)
@@ -2809,7 +2813,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel64Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName12, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel285)
                 .addGap(18, 18, 18)
@@ -2831,7 +2835,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel64Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel285)
                     .addComponent(jLabel286)
                     .addComponent(jLabel287)
@@ -2869,7 +2873,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel65Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName13, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel291)
                 .addGap(18, 18, 18)
@@ -2891,7 +2895,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel65Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel291)
                     .addComponent(jLabel292)
                     .addComponent(jLabel293)
@@ -2929,7 +2933,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel66Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel66Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName14, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel297)
                 .addGap(18, 18, 18)
@@ -2951,7 +2955,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel66Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel66Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel297)
                     .addComponent(jLabel298)
                     .addComponent(jLabel299)
@@ -2989,7 +2993,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel67Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel67Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName15, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel303)
                 .addGap(18, 18, 18)
@@ -3011,7 +3015,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel67Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel67Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel303)
                     .addComponent(jLabel304)
                     .addComponent(jLabel305)
@@ -3049,7 +3053,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel68Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel68Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(moveName16, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel309)
                 .addGap(18, 18, 18)
@@ -3071,7 +3075,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel68Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel68Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(moveName16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel309)
                     .addComponent(jLabel310)
                     .addComponent(jLabel311)
@@ -3906,10 +3910,18 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void move1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move1ActionPerformed
+    private void effect1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_effect1ActionPerformed
         // TODO add your handling code here:
-        displayMove(1);
-    }//GEN-LAST:event_move1ActionPerformed
+        try {
+            Class<Moves> move = (Class<Moves>)Class.forName("PTUCharacterCreator.Moves." + moveName1.getText().replace(" ", "_").replace("'","_"));
+            Moves tempMove = (Moves) move.getDeclaredConstructor().newInstance();
+            
+            
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(null, null, ex);
+            JOptionPane.showMessageDialog(null,"Not a Move");
+        }
+    }//GEN-LAST:event_effect1ActionPerformed
 
     private void move5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move5ActionPerformed
         // TODO add your handling code here:
@@ -4041,8 +4053,8 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
     private void addFeatureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addFeatureActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null,featureLookup.getText().replace(" ", "_"));
-        t.addFeature(featureLookup.getText());
+        int bonus = JOptionPane.showConfirmDialog(null,"Bonus Feat?");
+        t.addFeature(featureLookup.getText(), bonus);
     }//GEN-LAST:event_addFeatureActionPerformed
 
     private void edgeLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edgeLookupActionPerformed
@@ -4066,7 +4078,6 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             Class<Feature> feat = (Class<Feature>)Class.forName("PTUCharacterCreator.Feats." + featureLookup.getText().replace(" ", "_"));
-            System.out.println("TEST");
             Feature tempFeat = (Feature) feat.getDeclaredConstructor().newInstance();
             featureInfo.setText(tempFeat.getEffect());
             
@@ -4075,6 +4086,35 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,featureLookup.getText());
         }
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void moveName1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moveName1KeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            if(t.addMove(moveName1.getText(),1)){
+                try{
+                    Class<Moves> temp =
+                        (Class<Moves>)Class.forName(moveName1.getText());
+                    Moves move = (Moves)temp.getDeclaredConstructor().newInstance();
+                    type1.setText(move.getType());
+                    category1.setText(move.getCategory());
+                    db1.setText(String.valueOf(move.getDB()));
+                    freq1.setText(move.getFreq());
+                    ac1.setText(String.valueOf(move.getAC()));
+                    range1.setText(move.getRange());
+                    effect1.setText(move.getName());
+                } catch (ClassNotFoundException | IllegalAccessException | IllegalArgumentException | InstantiationException | NoSuchMethodException | SecurityException | InvocationTargetException ex){}
+            }else{
+                JOptionPane.showMessageDialog(null, "Not a move or already have.");
+                type1.setText("--");
+                category1.setText("--");
+                db1.setText("--");
+                freq1.setText("--");
+                ac1.setText("--");
+                range1.setText("--");
+                effect1.setText("Show Effect");
+            }
+        }
+    }//GEN-LAST:event_moveName1KeyPressed
     
     private int getAtkBase(){
         return 5;
@@ -4109,7 +4149,6 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     }
     
     private void displayMove(int number){
-        
     }
     /**
      * @param args the command line arguments
@@ -4148,9 +4187,11 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Level;
+    private javax.swing.JLabel ac1;
     private javax.swing.JButton addEdgeButton;
     private javax.swing.JButton addFeature;
     private javax.swing.JTextField atkPoints;
+    private javax.swing.JLabel category1;
     private javax.swing.JPanel characterTab;
     private javax.swing.JTextField class1;
     private javax.swing.JTextField class2;
@@ -4186,14 +4227,17 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JTextField classFeat9;
     private javax.swing.JRadioButton clipboardJSON;
     private javax.swing.JPanel combatTab;
+    private javax.swing.JLabel db1;
     private javax.swing.JTextField defPoints;
     private javax.swing.JTextArea edgeInfo;
     private javax.swing.JButton edgeLookup;
     private javax.swing.JTextField edgeName;
     private javax.swing.JPanel edgeTab;
+    private javax.swing.JButton effect1;
     private javax.swing.JTextArea featureInfo;
     private javax.swing.JTextField featureLookup;
     private javax.swing.JPanel featureTab;
+    private javax.swing.JLabel freq1;
     private javax.swing.JTextField genFeat1;
     private javax.swing.JTextField genFeat10;
     private javax.swing.JTextField genFeat11;
@@ -4241,12 +4285,6 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
-    private javax.swing.JLabel jLabel104;
-    private javax.swing.JLabel jLabel105;
-    private javax.swing.JLabel jLabel106;
-    private javax.swing.JLabel jLabel107;
-    private javax.swing.JLabel jLabel108;
-    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel128;
@@ -4531,37 +4569,20 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea4;
     private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField36;
-    private javax.swing.JTextField jTextField37;
-    private javax.swing.JTextField jTextField38;
-    private javax.swing.JTextField jTextField39;
     private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField40;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
     private javax.swing.JTextField jTextField43;
     private javax.swing.JTextField jTextField44;
     private javax.swing.JTextField jTextField45;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField51;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField8;
     private javax.swing.ButtonGroup jsonRadioButtons;
     private javax.swing.JPanel jsonTab;
     private javax.swing.JTextArea jsonTextArea;
     private javax.swing.JTextField level;
     private javax.swing.JTextField miscExp;
-    private javax.swing.JButton move1;
     private javax.swing.JButton move16;
     private javax.swing.JButton move17;
     private javax.swing.JButton move18;
@@ -4577,12 +4598,30 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JButton move35;
     private javax.swing.JButton move5;
     private javax.swing.JButton move6;
+    private javax.swing.JTextField moveName1;
+    private javax.swing.JTextField moveName10;
+    private javax.swing.JTextField moveName11;
+    private javax.swing.JTextField moveName12;
+    private javax.swing.JTextField moveName13;
+    private javax.swing.JTextField moveName14;
+    private javax.swing.JTextField moveName15;
+    private javax.swing.JTextField moveName16;
+    private javax.swing.JTextField moveName2;
+    private javax.swing.JTextField moveName3;
+    private javax.swing.JTextField moveName4;
+    private javax.swing.JTextField moveName5;
+    private javax.swing.JTextField moveName6;
+    private javax.swing.JTextField moveName7;
+    private javax.swing.JTextField moveName8;
+    private javax.swing.JTextField moveName9;
+    private javax.swing.JLabel range1;
     private javax.swing.JTextField spAtkPoints;
     private javax.swing.JTextField spDefPoints;
     private javax.swing.JTextField spdPoints;
     private javax.swing.JTextField trainerName;
     private javax.swing.JRadioButton txtAreaJSON;
     private javax.swing.JRadioButton txtFileJSON;
+    private javax.swing.JLabel type1;
     private javax.swing.JTextField weight;
     // End of variables declaration//GEN-END:variables
     private class MKeyListener extends KeyAdapter {

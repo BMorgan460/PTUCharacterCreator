@@ -73,6 +73,9 @@ public class Trainer {
     //Features and Edges
     private ArrayList<Edge> edges;
     private ArrayList<Feature> features;
+    private ArrayList<Edge> bEdges;
+    private ArrayList<Feature> bFeatures;
+    
     
     //Pokemon
     private ArrayList<Pokemon> pc;
@@ -107,6 +110,8 @@ public class Trainer {
         abilities = new ArrayList();
         edges = new ArrayList();
         features = new ArrayList();
+        bEdges = new ArrayList();
+        bFeatures = new ArrayList();
         otherCapabilities = new ArrayList();
         currency = 0;
         setMaps();
@@ -220,14 +225,51 @@ public class Trainer {
         return statPoints - lHP - lAtk - lDef - lSpAtk - lSpDef - lSpd;
     }
     
-    public boolean addFeature(String feature){
+    public boolean hasFeat(String feature){
+        for(Feature feat : features){
+            if(feat.getName().equals(feature)){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean hasEdge(String edge){
+        for(Edge e : edges){
+            if(e.getName().equals(edge)){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public boolean checkSkillRank(String skill, int rank){
+        return skills.get(skill) >= rank;
+    }
+    
+    public boolean aboveLevel(int l){
+        return level >= l;
+    }
+    
+    public boolean addFeature(String feature, int bonus){
         try {
             Class<Feature> feat = (Class<Feature>)Class.forName("PTUCharacterCreator.Feats." + feature.replace(" ", "_"));
             Feature tempFeat = (Feature) feat.getDeclaredConstructor().newInstance();
+            
             if(features.contains(tempFeat)){
+                JOptionPane.showMessageDialog(null, "You already have this feature.");
                 return false;
             }
-            features.add(tempFeat);
+            if(bonus == JOptionPane.YES_OPTION){
+                bFeatures.add(tempFeat);
+            }
+            else{
+                if(tempFeat.checkPrereqs(this)){
+                    features.add(tempFeat);
+                }else{
+                    JOptionPane.showMessageDialog(null,"You do not meet the prerequisites for this feature.");
+                }
+            }
             String tags = tempFeat.getTags();
             if(tags.contains("[+HP]")){
                 fHP++;
@@ -247,7 +289,46 @@ public class Trainer {
             if(tags.contains("[+Speed]")){
                 fSpd++;
             }
-            //TODO Add in [+Attack or Special Attack]
+            if(tags.contains("[+Attack or Special Attack]")){
+                String input = "";
+                do{
+                    input = JOptionPane.showInputDialog(null, "Attack or Special Attack?");
+                }while(!input.equals("Attack") || !input.equals("Special Attack"));
+                switch (input){
+                    case "Attack":
+                        fAtk++;
+                        break;
+                    case "Special Attack":
+                        fSpAtk++;
+                        break;
+                }
+            }if(tags.contains("[+Any]")){
+                String input = "";
+                do{
+                    input = JOptionPane.showInputDialog(null, "Which stat?");
+                }while(!input.equals("HP") && !input.equals("Attack") && !input.equals("Defense") && !input.equals("Special Attack") && !input.equals("Special Defense") && !input.equals("Speed"));
+                switch (input){
+                    case "HP":
+                        fHP++;
+                        break;
+                    case "Attack":
+                        fAtk++;
+                        break;
+                    case "Defense":
+                        fDef++;
+                        break;
+                    case "Special Attack":
+                        fSpAtk++;
+                        break;
+                    case "Special Defense":
+                        fSpDef++;
+                        break;
+                    case "Speed":
+                        fSpd++;
+                        break;
+                }
+            }
+            
         } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
             Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -283,7 +364,7 @@ public class Trainer {
         try {
             Class<Edge> edge = (Class<Edge>)Class.forName("PTUCharacterCreator.Edges." + e);
             Edge tempEdge = (Edge) edge.getDeclaredConstructor().newInstance();
-            if(tempEdge.checkPrereqs(skills, edges, level)){
+            if(tempEdge.checkPrereqs(this)){
                 if(edges.contains(tempEdge)){
                     return false;
                 }
@@ -314,6 +395,29 @@ public class Trainer {
     }
     
     public boolean addMove(String name){
+        try {
+            Class<Moves> temp =
+                    (Class<Moves>)Class.forName(name);
+            Moves move = (Moves)temp.getDeclaredConstructor().newInstance();
+            if(!moves.contains(move)){
+                moves.add(move);
+                return true;
+            }
+            return false;
+        } catch (NoSuchMethodException | SecurityException | ClassNotFoundException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+    }
+    
+    public int getSpeed(){
+        return BASE_SPD + lSpd + fSpd;
+    }
+    
+    public boolean addMove(String name, int pos){
+        if(moves.size() >= pos){
+            moves.remove(pos);
+        }
         try {
             Class<Moves> temp =
                     (Class<Moves>)Class.forName(name);
@@ -426,6 +530,16 @@ public class Trainer {
 
     void setMiscExp(int miscExp) {
         this.exp = miscExp;
+    }
+
+    public boolean hasEC(String elemental_Connection) {
+        boolean flag = false;
+        for(Edge edge: edges){
+            if(edge.getName().contains("Elemental Connection")){
+                flag = true;
+            }
+        }
+        return flag;
     }
     
 }

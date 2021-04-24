@@ -1,4 +1,5 @@
 package PTUCharacterCreator.Feats;
+import PTUCharacterCreator.Trainer;
 import PTUCharacterCreator.Feature;
 public class Encore_Performance extends Feature {
 	{
@@ -6,6 +7,12 @@ public class Encore_Performance extends Feature {
 		tags = "";
 		frequency = "Daily x3 - Free Action";
 		effect = "Trigger: Your Pokemon uses a Status-Class move that does not target foes. Effect: Choose one of the following. »» Your Pokemon gains +1 Combat Stage in any Stat in which they havent gained a Combat Stage this turn. »» Your Pokemon gains a second Standard Action this round that must be used to make an At-Will action that does not trigger Encore Performance. »» If your Pokemon is placing Hazards, they may place an additional two units. »» If your Pokemon is activating a Weather Effect, it lasts an additional two turns. »» If your Pokemon is activating a Blessing, it gains one additional use.";
+		prereqs.put("3 Trickster Features", 0);
+		prereqs.put("Guile", 5);
 	}
 	public Encore_Performance(){}
+	@Override
+	public boolean checkPrereqs(Trainer t) {
+		return t.checkSkillRank("Guile",5) && t.hasFeat("Encore");
+	}
 }

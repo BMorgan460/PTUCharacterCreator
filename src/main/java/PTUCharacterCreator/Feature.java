@@ -7,7 +7,7 @@ import java.util.HashMap;
  * This serves as a parent class for every Feature
  * @author Blake Morgan
  */
-public class Feature {
+public abstract class Feature {
     protected String name;
     protected String tags;
     protected HashMap<String,Integer> prereqs;
@@ -29,35 +29,16 @@ public class Feature {
         return target;
     }
     
-    public boolean checkPrereqs(HashMap<String,Integer> skills, ArrayList<Feature> feats, ArrayList<Edge> edges, int level){
-        ArrayList<Boolean> flags = new ArrayList();
-        for (String key : prereqs.keySet()) {
-            if(skills.containsKey(key)){
-                if(skills.get(key) >= prereqs.get(key)){
-                    flags.add(true);
-                }
-            }else if (prereqs.get(key) == 9){
-                for(Edge e : edges){
-                    if(e.getName().equals(key)){
-                        flags.add(true);
-                        continue;
-                    }
-                }
-            }else if(prereqs.get(key) == 9){
-                for(Feature f : feats){
-                    if(f.getName().equals(key)){
-                        flags.add(true);
-                        continue;
-                    }
-                }
-            }else if(key.equals("Level")){
-                if(level >= prereqs.get(key)){
-                    flags.add(true);
-                }
+    public abstract boolean checkPrereqs(Trainer t);
+    
+    protected boolean checkMultipleSkills(Trainer t, String[] skills, int rank, int required){
+        int flags = 0;
+        for(String skill : skills){
+            if(t.checkSkillRank(skill, rank)){
+                flags++;
             }
         }
-        boolean flag = flags.size() == prereqs.size();
-        return flag;
+        return flags >= required;
     }
     
     public String getPrereqs(){

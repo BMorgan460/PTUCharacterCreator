@@ -1,4 +1,5 @@
 package PTUCharacterCreator.Feats;
+import PTUCharacterCreator.Trainer;
 import PTUCharacterCreator.Feature;
 public class Gift_of_Command extends Feature {
 	{
@@ -6,6 +7,11 @@ public class Gift_of_Command extends Feature {
 		tags = "[Patron Stat]";
 		frequency = "Static | 2 AP - Standard Action, Interrupt";
 		effect = "Static Effect: You sense the presence of and can identify those with Gifts coming from your patrons subservient Pokemon. You know which Gifts someone has from your patrons subservient Pokemon by looking at them. 2 AP Effect: Target Trainer within 8 meters with a Gift from your patrons subservient Pokemon has the Gift of your choice from that subservient Pokemon disabled for the next ten minutes.";
+		prereqs.put("One Major Gift from Your Patron Legendary", 0);
 	}
 	public Gift_of_Command(){}
+	@Override
+	public boolean checkPrereqs(Trainer t) {
+		return false;
+	}
 }
