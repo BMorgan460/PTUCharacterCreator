@@ -9,7 +9,7 @@ import java.util.HashMap;
  */
 public abstract class Edge {
     protected String name;
-    protected HashMap<String,Integer> prereqs;
+    protected HashMap<String,Integer> prereqs = new HashMap();
     protected String effect;
     
     public String getName(){

@@ -3,7 +3,7 @@ apply plugin: 'jacoco'
 apply plugin: 'application'
 
 
-mainClassName = 'PTUCharacterCreator.Main'
+mainClassName = 'PTUCharacterCreator.PTUCharacterCreatorGUI'
 
 repositories {
     jcenter()

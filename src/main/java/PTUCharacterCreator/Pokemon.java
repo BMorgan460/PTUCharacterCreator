@@ -138,9 +138,9 @@ public class Pokemon {
         }
         for(String move : moves) {
             @SuppressWarnings("unused")
-            Class<Moves> moveA;
+            Class<Move> moveA;
             try {
-                moveA = (Class<Moves>)Class.forName(move.replace(" ", "_"));
+                moveA = (Class<Move>)Class.forName(move.replace(" ", "_"));
             }
             catch (Exception e) {
                 System.out.println(move);
@@ -149,9 +149,9 @@ public class Pokemon {
         try {
         for(String move : eggMoves) {
             @SuppressWarnings("unused")
-            Class<Moves> moveA;
+            Class<Move> moveA;
             try {
-                moveA = (Class<Moves>)Class.forName(move.replace(" ", "_"));
+                moveA = (Class<Move>)Class.forName(move.replace(" ", "_"));
             }
             catch (Exception e) {
                 System.out.println(move);
@@ -165,9 +165,9 @@ public class Pokemon {
         try {
         for(String move : tutorMoves) {
             @SuppressWarnings("unused")
-            Class<Moves> moveA;
+            Class<Move> moveA;
             try {
-                moveA = (Class<Moves>)Class.forName(move.replace(" ", "_"));
+                moveA = (Class<Move>)Class.forName(move.replace(" ", "_"));
             }
             catch (Exception e) {
                 System.out.println(move);
@@ -180,9 +180,9 @@ public class Pokemon {
         try {
         for(String move : naturalMoves) {
             @SuppressWarnings("unused")
-            Class<Moves> moveA;
+            Class<Move> moveA;
             try {
-                moveA = (Class<Moves>)Class.forName(move.replace(" ", "_"));
+                moveA = (Class<Move>)Class.forName(move.replace(" ", "_"));
             }
             catch (Exception e) {
                 System.out.println(move);
@@ -195,9 +195,9 @@ public class Pokemon {
         try {
         for(String move : TMs) {
             @SuppressWarnings("unused")
-            Class<Moves> moveA;
+            Class<Move> moveA;
             try {
-                moveA = (Class<Moves>)Class.forName(move.replace(" ", "_"));
+                moveA = (Class<Move>)Class.forName(move.replace(" ", "_"));
             }
             catch (Exception e) {
                 System.out.println(move);
@@ -1336,9 +1336,9 @@ public class Pokemon {
             }
             try {
                 @SuppressWarnings("unchecked")
-                Class<Moves> move =
-                    (Class<Moves>)Class.forName(moveList[i].replace(" ", "_"));
-                Moves genned = (Moves)move.getDeclaredConstructor().newInstance();
+                Class<Move> move =
+                    (Class<Move>)Class.forName(moveList[i].replace(" ", "_"));
+                Move genned = (Move)move.getDeclaredConstructor().newInstance();
                 if ((genned.getType().equals(type1)
                     || genned.getType().equals(type2))
                     && !(genned.getCategory().equals("Status"))

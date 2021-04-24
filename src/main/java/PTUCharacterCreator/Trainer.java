@@ -64,7 +64,7 @@ public class Trainer {
     private ArrayList<String> otherCapabilities;
     
     //moves and abilities
-    private ArrayList<Moves> moves;
+    private ArrayList<Move> moves;
     private ArrayList<Ability> abilities;
     private int struggleDB;
     private String stab1;
@@ -256,7 +256,7 @@ public class Trainer {
             Class<Feature> feat = (Class<Feature>)Class.forName("PTUCharacterCreator.Feats." + feature.replace(" ", "_"));
             Feature tempFeat = (Feature) feat.getDeclaredConstructor().newInstance();
             
-            if(features.contains(tempFeat)){
+            if(features.contains(tempFeat) || bFeatures.contains(tempFeat)){
                 JOptionPane.showMessageDialog(null, "You already have this feature.");
                 return false;
             }
@@ -330,75 +330,242 @@ public class Trainer {
             }
             
         } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            JOptionPane.showMessageDialog(null,"Not a Feature. Make sure you spelled it correctly.");
+            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+    }
+    public boolean removeFeat(String feature){
+        try {
+            Class<Feature> feat = (Class<Feature>)Class.forName("PTUCharacterCreator.Feats." + feature.replace(" ", "_"));
+            Feature tempFeat = (Feature) feat.getDeclaredConstructor().newInstance();
+            
+            if(!features.contains(tempFeat) && !bFeatures.contains(tempFeat)){
+                JOptionPane.showMessageDialog(null, "You do not have this feature.");
+                return false;
+            }else if(features.contains(tempFeat)){
+                features.remove(tempFeat);
+            }else{
+                bFeatures.remove(tempFeat);
+            }
+            String tags = tempFeat.getTags();
+            if(tags.contains("[+HP]")){
+                fHP--;
+            }
+            if(tags.contains("[+Attack]")){
+                fAtk--;
+            }
+            if(tags.contains("[+Defense]")){
+                fDef--;
+            }
+            if(tags.contains("[+Special Attack]")){
+                fSpAtk--;
+            }
+            if(tags.contains("[+Special Defense]")){
+                fSpDef--;
+            }
+            if(tags.contains("[+Speed]")){
+                fSpd--;
+            }
+            if(tags.contains("[+Attack or Special Attack]")){
+                String input = "";
+                do{
+                    input = JOptionPane.showInputDialog(null, "Attack or Special Attack?");
+                }while(!input.equals("Attack") || !input.equals("Special Attack"));
+                switch (input){
+                    case "Attack":
+                        fAtk--;
+                        break;
+                    case "Special Attack":
+                        fSpAtk--;
+                        break;
+                }
+            }if(tags.contains("[+Any]")){
+                String input = "";
+                do{
+                    input = JOptionPane.showInputDialog(null, "Which stat?");
+                }while(!input.equals("HP") && !input.equals("Attack") && !input.equals("Defense") && !input.equals("Special Attack") && !input.equals("Special Defense") && !input.equals("Speed"));
+                switch (input){
+                    case "HP":
+                        fHP--;
+                        break;
+                    case "Attack":
+                        fAtk--;
+                        break;
+                    case "Defense":
+                        fDef--;
+                        break;
+                    case "Special Attack":
+                        fSpAtk--;
+                        break;
+                    case "Special Defense":
+                        fSpDef--;
+                        break;
+                    case "Speed":
+                        fSpd--;
+                        break;
+                }
+            }
+            return true;
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            JOptionPane.showMessageDialog(null,"Not a Feature. Make sure you spelled it correctly.");
             Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
         }
         return false;
     }
     
-    private void skillUpBasic(String e){
+    public int getFeaturesTotal(){
+        return features.size();
+    }
+    
+    public int getFeaturesRemaining(){
+        return level + 3 - features.size();
+    }
+    
+    public int getEdgesTotal(){
+        return edges.size();
+    }
+    
+    public int getEdgesRemaining(){
+        return level + 3 - edges.size();
+    }
+    
+    private void skillUpBasic(String e, boolean up){
         int temp = skills.get(e);
-        skills.put(e, temp + 1);
+        if(up)
+            skills.put(e, temp + 1);
+        else
+            skills.put(e, temp - 1);
     }
     
-    private void skillUpAdept(String e){
-        skills.put(e, 4);
+    private void skillUpAdept(String e, boolean up){
+        if(up)
+            skills.put(e, 4);
+        else
+            skills.put(e, 3);
     }
     
-    private void skillUpExpert(String e){
-        skills.put(e, 5);
+    private void skillUpExpert(String e, boolean up){
+        if(up)
+            skills.put(e, 5);
+        else
+            skills.put(e, 4);
     }
     
-    private void skillUpMaster(String e){
-        skills.put(e, 6);
+    private void skillUpMaster(String e, boolean up){
+        if(up)
+            skills.put(e, 6);
+        else
+            skills.put(e, 5);
     }
     
-    private void skillUpVirtuoso(String e){
-        skills.put(e, 8);
+    private void skillUpVirtuoso(String e, boolean up){
+        if(up)
+            skills.put(e, 8);
+        else
+            skills.put(e, 6);
     }
     
-    private void skillEnhance(String skills){
-        
+    private void skillBonusUp(String skills, boolean up){
+        String[] s = skills.split(", ");
+        if(up){
+            skillBonuses.put(s[0], skillBonuses.get(s[0]) + 2);
+            skillBonuses.put(s[1], skillBonuses.get(s[1]) + 2);
+        }
+        else{
+            skillBonuses.put(s[0], skillBonuses.get(s[0]) - 2);
+            skillBonuses.put(s[1], skillBonuses.get(s[1]) - 2);
+        }
     }
     
-    public boolean addEdge(String e){
+    public int getSkill(String key){
+        if(skills.get(key) == 8){
+            return 6;
+        }
+        return skills.get(key);
+    }
+    
+    public boolean addEdge(String e, int bonus){
         try {
             Class<Edge> edge = (Class<Edge>)Class.forName("PTUCharacterCreator.Edges." + e);
             Edge tempEdge = (Edge) edge.getDeclaredConstructor().newInstance();
-            if(tempEdge.checkPrereqs(this)){
-                if(edges.contains(tempEdge)){
-                    return false;
-                }
-                if(e.contains("Basic Skills")){
-                    skillUpBasic(e.substring(13));
-                }else if(e.contains("Adept Skills")){
-                    skillUpAdept(e.substring(13));
-                }else if(e.contains("Expert Skills")){
-                    skillUpExpert(e.substring(14));
-                }else if(e.contains("Master Skills")){
-                    skillUpMaster(e.substring(14));
-                }else if(e.contains("Virtuoso")){
-                    skillUpVirtuoso(e.substring(9));
-                }
-                if(e.contains("Skill Enhancement")){
-                    
-                }
-                edges.add(tempEdge);
-                return true;
-            }else{
+            
+            if(edges.contains(tempEdge)){
+                JOptionPane.showMessageDialog(null, "You already have this Edge.");
                 return false;
             }
-            
+            if(bonus == JOptionPane.YES_OPTION){
+                bEdges.add(tempEdge);
+            }else if(tempEdge.checkPrereqs(this)){
+                edges.add(tempEdge);
+            }else{
+                JOptionPane.showMessageDialog(null,"You do not meet the prerequisites.");
+                return false;
+            }
+            if(e.contains("Basic_Skills")){
+                skillUpBasic(e.substring(13), true);
+            }else if(e.contains("Adept_Skills")){
+                skillUpAdept(e.substring(13), true);
+            }else if(e.contains("Expert_Skills")){
+                skillUpExpert(e.substring(14), true);
+            }else if(e.contains("Master_Skills")){
+                skillUpMaster(e.substring(14), true);
+            }else if(e.contains("Virtuoso")){
+                skillUpVirtuoso(e.substring(9), true);
+            }
+            if(e.contains("Skill_Enhancement")){
+                skillBonusUp(tempEdge.getName().substring(18), true);
+            }
+            return true;
         } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            JOptionPane.showMessageDialog(null,"Not an Edge. Make sure you spelled it correctly.");
             Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
         }
         return false;
+    }
+    
+    public boolean removeEdge(String e){
+        try {
+            Class<Edge> edge = (Class<Edge>)Class.forName("PTUCharacterCreator.Edges." + e);
+            Edge tempEdge = (Edge) edge.getDeclaredConstructor().newInstance();
+            
+            if(!edges.contains(tempEdge) && !bEdges.contains(tempEdge)){
+                JOptionPane.showMessageDialog(null, "You do not have this Edge.");
+                return false;
+            }
+            
+            if(e.contains("Basic_Skills")){
+                skillUpBasic(e.substring(13), false);
+            }else if(e.contains("Adept_Skills")){
+                skillUpAdept(e.substring(13), false);
+            }else if(e.contains("Expert_Skills")){
+                skillUpExpert(e.substring(14), false);
+            }else if(e.contains("Master_Skills")){
+                skillUpMaster(e.substring(14), false);
+            }else if(e.contains("Virtuoso")){
+                skillUpVirtuoso(e.substring(9), false);
+            }
+            if(e.contains("Skill_Enhancement")){
+                skillBonusUp(e.substring(18), false);
+            }
+            if(edges.contains(tempEdge)){
+                edges.remove(tempEdge);
+            }else{
+                bEdges.remove(tempEdge);
+            }
+            return true;
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            JOptionPane.showMessageDialog(null,"Not an Edge. Make sure you spelled it correctly.");
+            Logger.getLogger(Trainer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return true;
     }
     
     public boolean addMove(String name){
         try {
-            Class<Moves> temp =
-                    (Class<Moves>)Class.forName(name);
-            Moves move = (Moves)temp.getDeclaredConstructor().newInstance();
+            Class<Move> temp =
+                    (Class<Move>)Class.forName(name);
+            Move move = (Move)temp.getDeclaredConstructor().newInstance();
             if(!moves.contains(move)){
                 moves.add(move);
                 return true;
@@ -419,9 +586,9 @@ public class Trainer {
             moves.remove(pos);
         }
         try {
-            Class<Moves> temp =
-                    (Class<Moves>)Class.forName(name);
-            Moves move = (Moves)temp.getDeclaredConstructor().newInstance();
+            Class<Move> temp =
+                    (Class<Move>)Class.forName(name);
+            Move move = (Move)temp.getDeclaredConstructor().newInstance();
             if(!moves.contains(move)){
                 moves.add(move);
                 return true;
@@ -452,7 +619,7 @@ public class Trainer {
     private String movesJSON(){
         String json = "";
         for(int i = 1; i <= moves.size(); i++){
-            Moves move = moves.get(i - 1);
+            Move move = moves.get(i - 1);
             json += String.format("\"Move%d\":{%s},\n", i, move.toString());
         }
         return json;
@@ -460,24 +627,37 @@ public class Trainer {
     
     private String edgesJSON(){
         String json = "";
-        for(int i = 1; i <= edges.size(); i++){
+        int i = 1;
+        for(; i <= edges.size(); i++){
             Edge edge = edges.get(i - 1);
             json += String.format("\"Edge%d\":{\"Name\":\"%s\",\"Cost\":0,\"Prereq\":\"%s\",\"Info\":\"%s\"},\n", i, edge.getName(), edge.getPrereqs(), edge.getEffect());
+        }
+        for(int j = 0; j < bEdges.size(); j++){
+            Edge edge = bEdges.get(j);
+            json += String.format("\"Edge%d\":{\"Name\":\"%s\",\"Cost\":0,\"Prereq\":\"%s\",\"Info\":\"%s\"},\n", i + j, edge.getName(), edge.getPrereqs(), edge.getEffect());
         }
         return json;
     }
     
     private String featsJSON(){
         String json = "";
-        for(int i = 1; i <= features.size(); i++){
+        int i = 1;
+        for(; i <= features.size(); i++){
             Feature feat = features.get(i - 1);
             json += String.format("\"Feat%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\",\"Target\":\"%s\"},\n", i, feat.getName(), feat.getFreq(), feat.getEffect(), feat.getTarget());
+        }
+        for(int j = 0; j < bFeatures.size(); j++){
+            Feature feat = bFeatures.get(j);
+            json += String.format("\"Feat%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\",\"Target\":\"%s\"},\n", i + j, feat.getName(), feat.getFreq(), feat.getEffect(), feat.getTarget());
         }
         return json;
     }
     
     private String abilitiesJSON(){
         String json = "";
+        if(abilities.size() == 0){
+            json += String.format("\"Ability1\":{\"Name\":\"\",\"Freq\":\"\",\"Info\":\"\"},\n");
+        }
         for(int i = 1; i <= abilities.size(); i++){
             Ability ability = abilities.get(i - 1);
             json += String.format("\"Ability%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\"},\n", i, ability.getName(), ability.getFreq(), ability.getEffect());
@@ -505,13 +685,13 @@ public class Trainer {
         //Skills
         for(String key : skills.keySet()){
             String temp = key.replace("Edu","Education").replace("Gen","General").replace("Tech","Technology").replace("Med","Medicine").replace("Ocu","Occult").replace("Poke","Pokemon");
-            json += String.format("\"%s\":%d",temp,skills.get(key));
+            json += String.format("\"%s\":%d,",temp,skills.get(key));
         }
         json += "\n";
         //Skill Ranks
         for (String key : skillBonuses.keySet()) {
             String temp = key.replace("Edu","Education").replace("Gen","General").replace("Tech","Technology").replace("Med","Medicine").replace("Ocu","Occult").replace("Poke","Pokemon");
-            json += String.format("\"%s\":%d",temp,skillBonuses.get(key));
+            json += String.format("\"%s\":%d,",temp,skillBonuses.get(key));
         }
         json += "\n";
         //Moves

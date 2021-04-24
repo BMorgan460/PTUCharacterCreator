@@ -10,7 +10,7 @@ import java.util.HashMap;
 public abstract class Feature {
     protected String name;
     protected String tags;
-    protected HashMap<String,Integer> prereqs;
+    protected HashMap<String,Integer> prereqs = new HashMap();
     protected String frequency;
     protected String effect;
     protected String target;

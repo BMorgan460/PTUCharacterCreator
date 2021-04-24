@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\PTUCharacterCreator.jar
 
 
 @rem Execute PTUCharacterCreator
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PTU_CHARACTER_CREATOR_OPTS%  -classpath "%CLASSPATH%" PTUCharacterCreator.Main %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PTU_CHARACTER_CREATOR_OPTS%  -classpath "%CLASSPATH%" PTUCharacterCreator.PTUCharacterCreatorGUI %*
 
 :end
 @rem End local scope for the variables with windows NT shell
