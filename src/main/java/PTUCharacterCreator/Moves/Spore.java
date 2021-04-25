@@ -5,6 +5,7 @@ public class Spore extends Move {
 		name = "Spore";
 		effect = "The target falls Asleep.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "Scene";
 		range = "4, 1 Target, Powder";

@@ -5,6 +5,7 @@ public class Frenzy_Plant extends Move {
 		name = "Frenzy Plant";
 		effect = "--";
 		damageBase = 15;
+		mDamageBase = 15;
 		AC = 4;
 		frequency = "Daily x2";
 		range = "3, 5 Targets, Smite, Exhaust";

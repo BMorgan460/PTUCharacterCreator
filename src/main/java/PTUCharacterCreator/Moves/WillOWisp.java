@@ -5,6 +5,7 @@ public class WillOWisp extends Move {
 		name = "Will-O-Wisp";
 		effect = "The target is Burned.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 5;
 		frequency = "EOT";
 		range = "6, 1 Target";

@@ -5,6 +5,7 @@ public class Origin_Pulse extends Move {
 		name = "Origin Pulse";
 		effect = "--";
 		damageBase = 12;
+		mDamageBase = 12;
 		AC = 5;
 		frequency = "Scene x2";
 		range = "Close Blast 3, Smite";

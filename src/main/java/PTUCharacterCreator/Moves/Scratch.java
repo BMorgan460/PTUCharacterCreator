@@ -5,6 +5,7 @@ public class Scratch extends Move {
 		name = "Scratch";
 		effect = "--";
 		damageBase = 4;
+		mDamageBase = 4;
 		AC = 2;
 		frequency = "At-Will";
 		range = "Melee, Pass";

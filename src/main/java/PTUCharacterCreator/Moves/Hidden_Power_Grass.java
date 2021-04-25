@@ -5,6 +5,7 @@ public class Hidden_Power_Grass extends Move {
 		name = "Hidden Power Grass";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1";

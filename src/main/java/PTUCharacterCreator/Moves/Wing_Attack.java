@@ -5,6 +5,7 @@ public class Wing_Attack extends Move {
 		name = "Wing Attack";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "At-Will";
 		range = "Melee, 1 Target";

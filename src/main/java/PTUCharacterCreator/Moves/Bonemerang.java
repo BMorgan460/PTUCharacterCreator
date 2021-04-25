@@ -5,6 +5,7 @@ public class Bonemerang extends Move {
 		name = "Bonemerang";
 		effect = "--";
 		damageBase = 5;
+		mDamageBase = 5;
 		AC = 3;
 		frequency = "EOT";
 		range = "6, 1 Target, Doublestrike";

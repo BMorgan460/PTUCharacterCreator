@@ -5,6 +5,7 @@ public class Nasty_Plot extends Move {
 		name = "Nasty Plot";
 		effect = "Raise the user's Special Attack by +2 CS.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "EOT";
 		range = "Self";

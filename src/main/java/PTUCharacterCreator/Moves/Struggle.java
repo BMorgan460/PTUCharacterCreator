@@ -5,6 +5,7 @@ public class Struggle extends Move {
 		name = "Struggle";
 		effect = "--";
 		damageBase = 4;
+		mDamageBase = 4;
 		AC = 4;
 		frequency = "At-Will";
 		range = "Melee, 1 Target";

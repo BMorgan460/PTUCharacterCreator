@@ -5,6 +5,7 @@ public class Hidden_Power_Fire extends Move {
 		name = "Hidden Power Fire";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1";

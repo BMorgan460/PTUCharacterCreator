@@ -5,6 +5,7 @@ public class Mega_Punch extends Move {
 		name = "Mega Punch";
 		effect = "--";
 		damageBase = 8;
+		mDamageBase = 8;
 		AC = 4;
 		frequency = "At-Will";
 		range = "Melee, 1 Target";

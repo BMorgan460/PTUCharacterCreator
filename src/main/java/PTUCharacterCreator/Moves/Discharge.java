@@ -5,6 +5,7 @@ public class Discharge extends Move {
 		name = "Discharge";
 		effect = "Discharge Paralyzes all legal targets on 15+.";
 		damageBase = 8;
+		mDamageBase = 8;
 		AC = 2;
 		frequency = "EOT";
 		range = "All Cardinally Adjacent Targets";

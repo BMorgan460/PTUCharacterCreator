@@ -5,6 +5,7 @@ public class Pierce extends Move {
 		name = "Pierce!";
 		effect = "Pierce deals an additional +10 damage against targets with Damage Reduction.";
 		damageBase = 7;
+		mDamageBase = 7;
 		AC = 2;
 		frequency = "EOT";
 		range = "WR, 1 Target";

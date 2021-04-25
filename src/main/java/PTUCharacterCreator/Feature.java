@@ -85,7 +85,7 @@ public abstract class Feature {
     
     @Override
     public boolean equals(Object o){
-        if(o.getClass() == Feature.class){
+        if(o.getClass() == this.getClass()){
             Feature m = (Feature) o;
             return this.name.equals(m.getName());
         }

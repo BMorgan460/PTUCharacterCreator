@@ -5,6 +5,7 @@ public class Sharpen extends Move {
 		name = "Sharpen";
 		effect = "Raise the user’s Attack by +1 CS.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "At-Will";
 		range = "Self";

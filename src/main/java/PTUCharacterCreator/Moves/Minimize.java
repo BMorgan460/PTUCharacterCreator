@@ -5,6 +5,7 @@ public class Minimize extends Move {
 		name = "Minimize";
 		effect = "The user gains +4 Evasion, and the user's size is lowered to Small for the remainder of the encounter. *Grants Shrinkable";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "Scene";
 		range = "Self";

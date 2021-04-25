@@ -5,6 +5,7 @@ public class Heart_Swap extends Move {
 		name = "Heart Swap";
 		effect = "The targets trade Combat Stage values for each stat.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "Daily";
 		range = "10, 2 Targets";

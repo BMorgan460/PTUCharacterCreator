@@ -5,6 +5,7 @@ public class Dazzling_Gleam extends Move {
 		name = "Dazzling Gleam";
 		effect = "--";
 		damageBase = 8;
+		mDamageBase = 8;
 		AC = 2;
 		frequency = "EOT";
 		range = "Cone 2";

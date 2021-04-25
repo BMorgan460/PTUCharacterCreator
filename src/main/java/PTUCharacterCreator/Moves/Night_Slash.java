@@ -5,6 +5,7 @@ public class Night_Slash extends Move {
 		name = "Night Slash";
 		effect = "Night Slash is a Critical Hit on 18+.";
 		damageBase = 7;
+		mDamageBase = 7;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, Pass";

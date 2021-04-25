@@ -5,6 +5,7 @@ public class Gear_Grind extends Move {
 		name = "Gear Grind";
 		effect = "--";
 		damageBase = 5;
+		mDamageBase = 5;
 		AC = 3;
 		frequency = "EOT";
 		range = "Melee, 1 Target, Double Strike";

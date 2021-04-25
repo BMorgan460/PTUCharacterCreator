@@ -5,6 +5,7 @@ public class Noble_Roar extends Move {
 		name = "Noble Roar";
 		effect = "Noble Roar lowers all legal targets’ Attack and Special Attack by +1 CS.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1, Sonic, Friendly, Social";

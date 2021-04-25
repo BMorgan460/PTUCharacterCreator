@@ -5,6 +5,7 @@ public class Dragon_Pulse extends Move {
 		name = "Dragon Pulse";
 		effect = "--";
 		damageBase = 9;
+		mDamageBase = 9;
 		AC = 2;
 		frequency = "EOT";
 		range = "8, 1 Target, Aura";

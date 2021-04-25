@@ -5,6 +5,7 @@ public class Shadow_Sneak extends Move {
 		name = "Shadow Sneak";
 		effect = "--";
 		damageBase = 4;
+		mDamageBase = 4;
 		AC = 2;
 		frequency = "At-Will";
 		range = "Melee, 1 Target, Priority";

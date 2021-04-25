@@ -5,6 +5,7 @@ public class Silver_Wind extends Move {
 		name = "Silver Wind";
 		effect = "Silver Wind raises each of the user's stats by +1 CS on 19+.";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "At-Will";
 		range = "6, 1 Target, Spirit Surge";

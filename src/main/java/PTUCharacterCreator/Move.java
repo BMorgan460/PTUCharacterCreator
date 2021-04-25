@@ -43,6 +43,10 @@ public class Move {
         return damageBase;
     }
 
+    public int getMDB() {
+        return mDamageBase;
+    }
+    
     public void increaseDB(int add) {
         if(damageBase != 0) {
             mDamageBase += add;
@@ -70,7 +74,7 @@ public class Move {
     
     @Override
     public boolean equals(Object o){
-        if(o.getClass() == Move.class){
+        if(o.getClass() == this.getClass()){
             Move m = (Move) o;
             return this.name.equals(m.getName());
         }

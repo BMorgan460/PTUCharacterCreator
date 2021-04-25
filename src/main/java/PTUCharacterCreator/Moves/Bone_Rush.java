@@ -5,6 +5,7 @@ public class Bone_Rush extends Move {
 		name = "Bone Rush";
 		effect = "--";
 		damageBase = 3;
+		mDamageBase = 3;
 		AC = 4;
 		frequency = "EOT";
 		range = "Melee, 1 Target, Five Strike";

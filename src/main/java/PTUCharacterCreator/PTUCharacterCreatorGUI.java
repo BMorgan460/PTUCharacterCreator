@@ -13,6 +13,7 @@ import java.awt.TextField;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultComboBoxModel;
@@ -245,7 +246,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         usedEdges = new javax.swing.JLabel();
         remainingEdges = new javax.swing.JLabel();
         jScrollPane9 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        edgeList = new javax.swing.JTextArea();
         jPanel22 = new javax.swing.JPanel();
         edgeName = new javax.swing.JTextField();
         jLabel59 = new javax.swing.JLabel();
@@ -263,214 +264,69 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jPanel31 = new javax.swing.JPanel();
         jPanel32 = new javax.swing.JPanel();
         jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel99 = new javax.swing.JLabel();
-        jLabel100 = new javax.swing.JLabel();
-        jLabel101 = new javax.swing.JLabel();
-        jLabel102 = new javax.swing.JLabel();
-        jLabel103 = new javax.swing.JLabel();
         jPanel33 = new javax.swing.JPanel();
         moveName1 = new javax.swing.JTextField();
-        type1 = new javax.swing.JLabel();
-        category1 = new javax.swing.JLabel();
-        db1 = new javax.swing.JLabel();
-        freq1 = new javax.swing.JLabel();
-        ac1 = new javax.swing.JLabel();
-        range1 = new javax.swing.JLabel();
         effect1 = new javax.swing.JButton();
-        jPanel38 = new javax.swing.JPanel();
-        moveName2 = new javax.swing.JTextField();
-        jLabel128 = new javax.swing.JLabel();
-        jLabel129 = new javax.swing.JLabel();
-        jLabel130 = new javax.swing.JLabel();
-        jLabel131 = new javax.swing.JLabel();
-        jLabel132 = new javax.swing.JLabel();
-        jLabel133 = new javax.swing.JLabel();
-        move5 = new javax.swing.JButton();
-        jPanel39 = new javax.swing.JPanel();
-        moveName3 = new javax.swing.JTextField();
-        jLabel135 = new javax.swing.JLabel();
-        jLabel136 = new javax.swing.JLabel();
-        jLabel137 = new javax.swing.JLabel();
-        jLabel138 = new javax.swing.JLabel();
-        jLabel139 = new javax.swing.JLabel();
-        jLabel140 = new javax.swing.JLabel();
-        move6 = new javax.swing.JButton();
-        jPanel49 = new javax.swing.JPanel();
-        moveName4 = new javax.swing.JTextField();
-        jLabel195 = new javax.swing.JLabel();
-        jLabel196 = new javax.swing.JLabel();
-        jLabel197 = new javax.swing.JLabel();
-        jLabel198 = new javax.swing.JLabel();
-        jLabel199 = new javax.swing.JLabel();
-        jLabel200 = new javax.swing.JLabel();
-        move16 = new javax.swing.JButton();
-        jPanel50 = new javax.swing.JPanel();
-        moveName5 = new javax.swing.JTextField();
-        jLabel201 = new javax.swing.JLabel();
-        jLabel202 = new javax.swing.JLabel();
-        jLabel203 = new javax.swing.JLabel();
-        jLabel204 = new javax.swing.JLabel();
-        jLabel205 = new javax.swing.JLabel();
-        jLabel206 = new javax.swing.JLabel();
-        move17 = new javax.swing.JButton();
-        jPanel51 = new javax.swing.JPanel();
-        moveName6 = new javax.swing.JTextField();
-        jLabel207 = new javax.swing.JLabel();
-        jLabel208 = new javax.swing.JLabel();
-        jLabel209 = new javax.swing.JLabel();
-        jLabel210 = new javax.swing.JLabel();
-        jLabel211 = new javax.swing.JLabel();
-        jLabel212 = new javax.swing.JLabel();
-        move18 = new javax.swing.JButton();
-        jPanel52 = new javax.swing.JPanel();
-        moveName7 = new javax.swing.JTextField();
-        jLabel213 = new javax.swing.JLabel();
-        jLabel214 = new javax.swing.JLabel();
-        jLabel215 = new javax.swing.JLabel();
-        jLabel216 = new javax.swing.JLabel();
-        jLabel217 = new javax.swing.JLabel();
-        jLabel218 = new javax.swing.JLabel();
-        move19 = new javax.swing.JButton();
-        jPanel53 = new javax.swing.JPanel();
-        moveName8 = new javax.swing.JTextField();
-        jLabel219 = new javax.swing.JLabel();
-        jLabel220 = new javax.swing.JLabel();
-        jLabel221 = new javax.swing.JLabel();
-        jLabel222 = new javax.swing.JLabel();
-        jLabel223 = new javax.swing.JLabel();
-        jLabel224 = new javax.swing.JLabel();
-        move20 = new javax.swing.JButton();
         jPanel34 = new javax.swing.JPanel();
-        moveName9 = new javax.swing.JTextField();
-        jLabel267 = new javax.swing.JLabel();
-        jLabel268 = new javax.swing.JLabel();
-        jLabel269 = new javax.swing.JLabel();
-        jLabel270 = new javax.swing.JLabel();
-        jLabel271 = new javax.swing.JLabel();
-        jLabel272 = new javax.swing.JLabel();
-        move28 = new javax.swing.JButton();
-        jPanel62 = new javax.swing.JPanel();
-        moveName10 = new javax.swing.JTextField();
-        jLabel273 = new javax.swing.JLabel();
-        jLabel274 = new javax.swing.JLabel();
-        jLabel275 = new javax.swing.JLabel();
-        jLabel276 = new javax.swing.JLabel();
-        jLabel277 = new javax.swing.JLabel();
-        jLabel278 = new javax.swing.JLabel();
-        move29 = new javax.swing.JButton();
-        jPanel63 = new javax.swing.JPanel();
-        moveName11 = new javax.swing.JTextField();
-        jLabel279 = new javax.swing.JLabel();
-        jLabel280 = new javax.swing.JLabel();
-        jLabel281 = new javax.swing.JLabel();
-        jLabel282 = new javax.swing.JLabel();
-        jLabel283 = new javax.swing.JLabel();
-        jLabel284 = new javax.swing.JLabel();
-        move30 = new javax.swing.JButton();
-        jPanel64 = new javax.swing.JPanel();
-        moveName12 = new javax.swing.JTextField();
-        jLabel285 = new javax.swing.JLabel();
-        jLabel286 = new javax.swing.JLabel();
-        jLabel287 = new javax.swing.JLabel();
-        jLabel288 = new javax.swing.JLabel();
-        jLabel289 = new javax.swing.JLabel();
-        jLabel290 = new javax.swing.JLabel();
-        move31 = new javax.swing.JButton();
-        jPanel65 = new javax.swing.JPanel();
-        moveName13 = new javax.swing.JTextField();
-        jLabel291 = new javax.swing.JLabel();
-        jLabel292 = new javax.swing.JLabel();
-        jLabel293 = new javax.swing.JLabel();
-        jLabel294 = new javax.swing.JLabel();
-        jLabel295 = new javax.swing.JLabel();
-        jLabel296 = new javax.swing.JLabel();
-        move32 = new javax.swing.JButton();
-        jPanel66 = new javax.swing.JPanel();
-        moveName14 = new javax.swing.JTextField();
-        jLabel297 = new javax.swing.JLabel();
-        jLabel298 = new javax.swing.JLabel();
-        jLabel299 = new javax.swing.JLabel();
-        jLabel300 = new javax.swing.JLabel();
-        jLabel301 = new javax.swing.JLabel();
-        jLabel302 = new javax.swing.JLabel();
-        move33 = new javax.swing.JButton();
-        jPanel67 = new javax.swing.JPanel();
-        moveName15 = new javax.swing.JTextField();
-        jLabel303 = new javax.swing.JLabel();
-        jLabel304 = new javax.swing.JLabel();
-        jLabel305 = new javax.swing.JLabel();
-        jLabel306 = new javax.swing.JLabel();
-        jLabel307 = new javax.swing.JLabel();
-        jLabel308 = new javax.swing.JLabel();
-        move34 = new javax.swing.JButton();
-        jPanel68 = new javax.swing.JPanel();
-        moveName16 = new javax.swing.JTextField();
-        jLabel309 = new javax.swing.JLabel();
-        jLabel310 = new javax.swing.JLabel();
-        jLabel311 = new javax.swing.JLabel();
-        jLabel312 = new javax.swing.JLabel();
-        jLabel313 = new javax.swing.JLabel();
-        jLabel314 = new javax.swing.JLabel();
-        move35 = new javax.swing.JButton();
+        moveName2 = new javax.swing.JTextField();
+        effect3 = new javax.swing.JButton();
+        jPanel36 = new javax.swing.JPanel();
+        moveName3 = new javax.swing.JTextField();
+        effect4 = new javax.swing.JButton();
+        jPanel37 = new javax.swing.JPanel();
+        moveName4 = new javax.swing.JTextField();
+        effect5 = new javax.swing.JButton();
         jPanel61 = new javax.swing.JPanel();
         jPanel69 = new javax.swing.JPanel();
         jLabel315 = new javax.swing.JLabel();
-        jLabel316 = new javax.swing.JLabel();
-        jLabel317 = new javax.swing.JLabel();
         jPanel73 = new javax.swing.JPanel();
-        jTextField43 = new javax.swing.JTextField();
-        jLabel327 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        abilityName1 = new javax.swing.JTextField();
+        ability1 = new javax.swing.JButton();
         jPanel74 = new javax.swing.JPanel();
-        jTextField44 = new javax.swing.JTextField();
-        jLabel328 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        abilityName2 = new javax.swing.JTextField();
+        ability2 = new javax.swing.JButton();
         jPanel75 = new javax.swing.JPanel();
-        jTextField45 = new javax.swing.JTextField();
-        jLabel329 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        abilityName3 = new javax.swing.JTextField();
+        ability3 = new javax.swing.JButton();
         jPanel76 = new javax.swing.JPanel();
-        jTextField51 = new javax.swing.JTextField();
-        jLabel330 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
+        abilityName4 = new javax.swing.JTextField();
+        ability4 = new javax.swing.JButton();
         jPanel89 = new javax.swing.JPanel();
         jPanel90 = new javax.swing.JPanel();
         jLabel382 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
+        statsLeft = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         jLabel63 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
         hpPoints = new javax.swing.JTextField();
-        jLabel65 = new javax.swing.JLabel();
+        hpTotal = new javax.swing.JLabel();
         jPanel19 = new javax.swing.JPanel();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
         atkPoints = new javax.swing.JTextField();
-        jLabel68 = new javax.swing.JLabel();
+        atkTotal = new javax.swing.JLabel();
         jPanel20 = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         defPoints = new javax.swing.JTextField();
-        jLabel71 = new javax.swing.JLabel();
+        defTotal = new javax.swing.JLabel();
         jPanel21 = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
         spAtkPoints = new javax.swing.JTextField();
-        jLabel74 = new javax.swing.JLabel();
+        spAtkTotal = new javax.swing.JLabel();
         jPanel27 = new javax.swing.JPanel();
         jLabel93 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
         spDefPoints = new javax.swing.JTextField();
-        jLabel95 = new javax.swing.JLabel();
+        spDefTotal = new javax.swing.JLabel();
         jPanel28 = new javax.swing.JPanel();
         jLabel96 = new javax.swing.JLabel();
         jLabel97 = new javax.swing.JLabel();
         spdPoints = new javax.swing.JTextField();
-        jLabel98 = new javax.swing.JLabel();
+        spdTotal = new javax.swing.JLabel();
         jsonTab = new javax.swing.JPanel();
         jPanel29 = new javax.swing.JPanel();
         txtFileJSON = new javax.swing.JRadioButton();
@@ -1041,7 +897,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(characterTabLayout.createSequentialGroup()
                 .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 285, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 729, Short.MAX_VALUE)
         );
 
@@ -1431,35 +1287,31 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                    .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(genFeat1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(genFeat2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(45, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                        .addComponent(genFeat2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(genFeat4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(genFeat5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                        .addComponent(genFeat5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(genFeat7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(genFeat8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(genFeat8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(genFeat10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(genFeat12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
+                    .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(genFeat13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(genFeat15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(genFeat15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(genFeat16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(genFeat18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(genFeat18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1914,10 +1766,10 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         remainingEdges.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         remainingEdges.setText("Edges Remaining: " + t.getEdgesRemaining());
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane9.setViewportView(jTextArea1);
+        edgeList.setEditable(false);
+        edgeList.setColumns(20);
+        edgeList.setRows(5);
+        jScrollPane9.setViewportView(edgeList);
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
@@ -2026,7 +1878,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(edgeTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
@@ -2070,21 +1922,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
         jPanel32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel53.setText("Name");
-
-        jLabel54.setText("Type");
-
-        jLabel55.setText("Category");
-
-        jLabel99.setText("DB");
-
-        jLabel100.setText("Frequency");
-
-        jLabel101.setText("AC");
-
-        jLabel102.setText("Range");
-
-        jLabel103.setText("Effect");
+        jLabel53.setText("Moves");
 
         javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
         jPanel32.setLayout(jPanel32Layout);
@@ -2093,36 +1931,13 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(jPanel32Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel54)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel55)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel99)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel100)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel101)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel102)
-                .addGap(58, 58, 58)
-                .addComponent(jLabel103)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel32Layout.setVerticalGroup(
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel32Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel103)
-                    .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel53)
-                        .addComponent(jLabel54)
-                        .addComponent(jLabel55)
-                        .addComponent(jLabel99)
-                        .addComponent(jLabel100)
-                        .addComponent(jLabel101, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel102)))
+                .addComponent(jLabel53)
                 .addGap(6, 6, 6))
         );
 
@@ -2134,19 +1949,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             }
         });
 
-        type1.setText("--");
-
-        category1.setText("--");
-
-        db1.setText("--");
-
-        freq1.setText("--");
-
-        ac1.setText("--");
-
-        range1.setText("--");
-
-        effect1.setText("Show Effect");
+        effect1.setText("Show Move");
         effect1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 effect1ActionPerformed(evt);
@@ -2160,19 +1963,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(jPanel33Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(moveName1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(type1)
-                .addGap(18, 18, 18)
-                .addComponent(category1)
-                .addGap(18, 18, 18)
-                .addComponent(db1)
-                .addGap(18, 18, 18)
-                .addComponent(freq1)
-                .addGap(18, 18, 18)
-                .addComponent(ac1)
-                .addGap(18, 18, 18)
-                .addComponent(range1)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(effect1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2182,454 +1973,23 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(moveName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(type1)
-                    .addComponent(category1)
-                    .addComponent(db1)
-                    .addComponent(freq1)
-                    .addComponent(ac1)
-                    .addComponent(range1)
                     .addComponent(effect1))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel38.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel128.setText("--");
-
-        jLabel129.setText("--");
-
-        jLabel130.setText("--");
-
-        jLabel131.setText("--");
-
-        jLabel132.setText("--");
-
-        jLabel133.setText("--");
-
-        move5.setText("Show Effect");
-        move5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move5ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel38Layout = new javax.swing.GroupLayout(jPanel38);
-        jPanel38.setLayout(jPanel38Layout);
-        jPanel38Layout.setHorizontalGroup(
-            jPanel38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel38Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel128)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel129)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel130)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel131)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel132)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel133)
-                .addGap(18, 18, 18)
-                .addComponent(move5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel38Layout.setVerticalGroup(
-            jPanel38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel38Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel128)
-                    .addComponent(jLabel129)
-                    .addComponent(jLabel130)
-                    .addComponent(jLabel131)
-                    .addComponent(jLabel132)
-                    .addComponent(jLabel133)
-                    .addComponent(move5))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel39.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel135.setText("--");
-
-        jLabel136.setText("--");
-
-        jLabel137.setText("--");
-
-        jLabel138.setText("--");
-
-        jLabel139.setText("--");
-
-        jLabel140.setText("--");
-
-        move6.setText("Show Effect");
-        move6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move6ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
-        jPanel39.setLayout(jPanel39Layout);
-        jPanel39Layout.setHorizontalGroup(
-            jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel39Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel135)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel136)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel137)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel138)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel139)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel140)
-                .addGap(18, 18, 18)
-                .addComponent(move6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel39Layout.setVerticalGroup(
-            jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel39Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel135)
-                    .addComponent(jLabel136)
-                    .addComponent(jLabel137)
-                    .addComponent(jLabel138)
-                    .addComponent(jLabel139)
-                    .addComponent(jLabel140)
-                    .addComponent(move6))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel195.setText("--");
-
-        jLabel196.setText("--");
-
-        jLabel197.setText("--");
-
-        jLabel198.setText("--");
-
-        jLabel199.setText("--");
-
-        jLabel200.setText("--");
-
-        move16.setText("Show Effect");
-        move16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move16ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel49Layout = new javax.swing.GroupLayout(jPanel49);
-        jPanel49.setLayout(jPanel49Layout);
-        jPanel49Layout.setHorizontalGroup(
-            jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel49Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel195)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel196)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel197)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel198)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel199)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel200)
-                .addGap(18, 18, 18)
-                .addComponent(move16)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel49Layout.setVerticalGroup(
-            jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel49Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel195)
-                    .addComponent(jLabel196)
-                    .addComponent(jLabel197)
-                    .addComponent(jLabel198)
-                    .addComponent(jLabel199)
-                    .addComponent(jLabel200)
-                    .addComponent(move16))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel201.setText("--");
-
-        jLabel202.setText("--");
-
-        jLabel203.setText("--");
-
-        jLabel204.setText("--");
-
-        jLabel205.setText("--");
-
-        jLabel206.setText("--");
-
-        move17.setText("Show Effect");
-        move17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move17ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel50Layout = new javax.swing.GroupLayout(jPanel50);
-        jPanel50.setLayout(jPanel50Layout);
-        jPanel50Layout.setHorizontalGroup(
-            jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel50Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel201)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel202)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel203)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel204)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel205)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel206)
-                .addGap(18, 18, 18)
-                .addComponent(move17)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel50Layout.setVerticalGroup(
-            jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel50Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel201)
-                    .addComponent(jLabel202)
-                    .addComponent(jLabel203)
-                    .addComponent(jLabel204)
-                    .addComponent(jLabel205)
-                    .addComponent(jLabel206)
-                    .addComponent(move17))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel207.setText("--");
-
-        jLabel208.setText("--");
-
-        jLabel209.setText("--");
-
-        jLabel210.setText("--");
-
-        jLabel211.setText("--");
-
-        jLabel212.setText("--");
-
-        move18.setText("Show Effect");
-        move18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move18ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel51Layout = new javax.swing.GroupLayout(jPanel51);
-        jPanel51.setLayout(jPanel51Layout);
-        jPanel51Layout.setHorizontalGroup(
-            jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel51Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel207)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel208)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel209)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel210)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel211)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel212)
-                .addGap(18, 18, 18)
-                .addComponent(move18)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel51Layout.setVerticalGroup(
-            jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel51Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel207)
-                    .addComponent(jLabel208)
-                    .addComponent(jLabel209)
-                    .addComponent(jLabel210)
-                    .addComponent(jLabel211)
-                    .addComponent(jLabel212)
-                    .addComponent(move18))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel213.setText("--");
-
-        jLabel214.setText("--");
-
-        jLabel215.setText("--");
-
-        jLabel216.setText("--");
-
-        jLabel217.setText("--");
-
-        jLabel218.setText("--");
-
-        move19.setText("Show Effect");
-        move19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move19ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel52Layout = new javax.swing.GroupLayout(jPanel52);
-        jPanel52.setLayout(jPanel52Layout);
-        jPanel52Layout.setHorizontalGroup(
-            jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel52Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName7, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel213)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel214)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel215)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel216)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel217)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel218)
-                .addGap(18, 18, 18)
-                .addComponent(move19)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel52Layout.setVerticalGroup(
-            jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel52Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel213)
-                    .addComponent(jLabel214)
-                    .addComponent(jLabel215)
-                    .addComponent(jLabel216)
-                    .addComponent(jLabel217)
-                    .addComponent(jLabel218)
-                    .addComponent(move19))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel219.setText("--");
-
-        jLabel220.setText("--");
-
-        jLabel221.setText("--");
-
-        jLabel222.setText("--");
-
-        jLabel223.setText("--");
-
-        jLabel224.setText("--");
-
-        move20.setText("Show Effect");
-        move20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move20ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel53Layout = new javax.swing.GroupLayout(jPanel53);
-        jPanel53.setLayout(jPanel53Layout);
-        jPanel53Layout.setHorizontalGroup(
-            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel53Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName8, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel219)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel220)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel221)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel222)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel223)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel224)
-                .addGap(18, 18, 18)
-                .addComponent(move20)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel53Layout.setVerticalGroup(
-            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel53Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel219)
-                    .addComponent(jLabel220)
-                    .addComponent(jLabel221)
-                    .addComponent(jLabel222)
-                    .addComponent(jLabel223)
-                    .addComponent(jLabel224)
-                    .addComponent(move20))
-                .addGap(6, 6, 6))
         );
 
         jPanel34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel267.setText("--");
+        moveName2.setEditable(false);
+        moveName2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                moveName2KeyPressed(evt);
+            }
+        });
 
-        jLabel268.setText("--");
-
-        jLabel269.setText("--");
-
-        jLabel270.setText("--");
-
-        jLabel271.setText("--");
-
-        jLabel272.setText("--");
-
-        move28.setText("Show Effect");
-        move28.addActionListener(new java.awt.event.ActionListener() {
+        effect3.setText("Show Move");
+        effect3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move28ActionPerformed(evt);
+                effect3ActionPerformed(evt);
             }
         });
 
@@ -2639,21 +1999,9 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel34Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(moveName9, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel267)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel268)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel269)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel270)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel271)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel272)
-                .addGap(18, 18, 18)
-                .addComponent(move28)
+                .addComponent(moveName2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(effect3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel34Layout.setVerticalGroup(
@@ -2661,435 +2009,83 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel34Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel267)
-                    .addComponent(jLabel268)
-                    .addComponent(jLabel269)
-                    .addComponent(jLabel270)
-                    .addComponent(jLabel271)
-                    .addComponent(jLabel272)
-                    .addComponent(move28))
-                .addGap(6, 6, 6))
+                    .addComponent(moveName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(effect3))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel273.setText("--");
-
-        jLabel274.setText("--");
-
-        jLabel275.setText("--");
-
-        jLabel276.setText("--");
-
-        jLabel277.setText("--");
-
-        jLabel278.setText("--");
-
-        move29.setText("Show Effect");
-        move29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move29ActionPerformed(evt);
+        moveName3.setEditable(false);
+        moveName3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                moveName3KeyPressed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel62Layout = new javax.swing.GroupLayout(jPanel62);
-        jPanel62.setLayout(jPanel62Layout);
-        jPanel62Layout.setHorizontalGroup(
-            jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel62Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel273)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel274)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel275)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel276)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel277)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel278)
-                .addGap(18, 18, 18)
-                .addComponent(move29)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel62Layout.setVerticalGroup(
-            jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel62Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel273)
-                    .addComponent(jLabel274)
-                    .addComponent(jLabel275)
-                    .addComponent(jLabel276)
-                    .addComponent(jLabel277)
-                    .addComponent(jLabel278)
-                    .addComponent(move29))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel63.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel279.setText("--");
-
-        jLabel280.setText("--");
-
-        jLabel281.setText("--");
-
-        jLabel282.setText("--");
-
-        jLabel283.setText("--");
-
-        jLabel284.setText("--");
-
-        move30.setText("Show Effect");
-        move30.addActionListener(new java.awt.event.ActionListener() {
+        effect4.setText("Show Move");
+        effect4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move30ActionPerformed(evt);
+                effect4ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
-        jPanel63.setLayout(jPanel63Layout);
-        jPanel63Layout.setHorizontalGroup(
-            jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel63Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel36Layout = new javax.swing.GroupLayout(jPanel36);
+        jPanel36.setLayout(jPanel36Layout);
+        jPanel36Layout.setHorizontalGroup(
+            jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel36Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(moveName11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel279)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel280)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel281)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel282)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel283)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel284)
-                .addGap(18, 18, 18)
-                .addComponent(move30)
+                .addComponent(moveName3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(effect4)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel63Layout.setVerticalGroup(
-            jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel63Layout.createSequentialGroup()
+        jPanel36Layout.setVerticalGroup(
+            jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel36Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addGroup(jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel279)
-                    .addComponent(jLabel280)
-                    .addComponent(jLabel281)
-                    .addComponent(jLabel282)
-                    .addComponent(jLabel283)
-                    .addComponent(jLabel284)
-                    .addComponent(move30))
-                .addGap(6, 6, 6))
+                .addGroup(jPanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(moveName3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(effect4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel64.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel37.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel285.setText("--");
-
-        jLabel286.setText("--");
-
-        jLabel287.setText("--");
-
-        jLabel288.setText("--");
-
-        jLabel289.setText("--");
-
-        jLabel290.setText("--");
-
-        move31.setText("Show Effect");
-        move31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move31ActionPerformed(evt);
+        moveName4.setEditable(false);
+        moveName4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                moveName4KeyPressed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
-        jPanel64.setLayout(jPanel64Layout);
-        jPanel64Layout.setHorizontalGroup(
-            jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel64Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName12, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel285)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel286)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel287)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel288)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel289)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel290)
-                .addGap(18, 18, 18)
-                .addComponent(move31)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel64Layout.setVerticalGroup(
-            jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel64Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel285)
-                    .addComponent(jLabel286)
-                    .addComponent(jLabel287)
-                    .addComponent(jLabel288)
-                    .addComponent(jLabel289)
-                    .addComponent(jLabel290)
-                    .addComponent(move31))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel65.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel291.setText("--");
-
-        jLabel292.setText("--");
-
-        jLabel293.setText("--");
-
-        jLabel294.setText("--");
-
-        jLabel295.setText("--");
-
-        jLabel296.setText("--");
-
-        move32.setText("Show Effect");
-        move32.addActionListener(new java.awt.event.ActionListener() {
+        effect5.setText("Show Move");
+        effect5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move32ActionPerformed(evt);
+                effect5ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel65Layout = new javax.swing.GroupLayout(jPanel65);
-        jPanel65.setLayout(jPanel65Layout);
-        jPanel65Layout.setHorizontalGroup(
-            jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel65Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel37Layout = new javax.swing.GroupLayout(jPanel37);
+        jPanel37.setLayout(jPanel37Layout);
+        jPanel37Layout.setHorizontalGroup(
+            jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel37Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(moveName13, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel291)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel292)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel293)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel294)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel295)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel296)
-                .addGap(18, 18, 18)
-                .addComponent(move32)
+                .addComponent(moveName4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(effect5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel65Layout.setVerticalGroup(
-            jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel65Layout.createSequentialGroup()
+        jPanel37Layout.setVerticalGroup(
+            jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel37Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addGroup(jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel291)
-                    .addComponent(jLabel292)
-                    .addComponent(jLabel293)
-                    .addComponent(jLabel294)
-                    .addComponent(jLabel295)
-                    .addComponent(jLabel296)
-                    .addComponent(move32))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel66.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel297.setText("--");
-
-        jLabel298.setText("--");
-
-        jLabel299.setText("--");
-
-        jLabel300.setText("--");
-
-        jLabel301.setText("--");
-
-        jLabel302.setText("--");
-
-        move33.setText("Show Effect");
-        move33.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move33ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel66Layout = new javax.swing.GroupLayout(jPanel66);
-        jPanel66.setLayout(jPanel66Layout);
-        jPanel66Layout.setHorizontalGroup(
-            jPanel66Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel66Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName14, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel297)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel298)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel299)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel300)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel301)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel302)
-                .addGap(18, 18, 18)
-                .addComponent(move33)
+                .addGroup(jPanel37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(moveName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(effect5))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel66Layout.setVerticalGroup(
-            jPanel66Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel66Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel66Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel297)
-                    .addComponent(jLabel298)
-                    .addComponent(jLabel299)
-                    .addComponent(jLabel300)
-                    .addComponent(jLabel301)
-                    .addComponent(jLabel302)
-                    .addComponent(move33))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel67.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel303.setText("--");
-
-        jLabel304.setText("--");
-
-        jLabel305.setText("--");
-
-        jLabel306.setText("--");
-
-        jLabel307.setText("--");
-
-        jLabel308.setText("--");
-
-        move34.setText("Show Effect");
-        move34.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move34ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel67Layout = new javax.swing.GroupLayout(jPanel67);
-        jPanel67.setLayout(jPanel67Layout);
-        jPanel67Layout.setHorizontalGroup(
-            jPanel67Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel67Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName15, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel303)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel304)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel305)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel306)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel307)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel308)
-                .addGap(18, 18, 18)
-                .addComponent(move34)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel67Layout.setVerticalGroup(
-            jPanel67Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel67Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel67Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel303)
-                    .addComponent(jLabel304)
-                    .addComponent(jLabel305)
-                    .addComponent(jLabel306)
-                    .addComponent(jLabel307)
-                    .addComponent(jLabel308)
-                    .addComponent(move34))
-                .addGap(6, 6, 6))
-        );
-
-        jPanel68.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel309.setText("--");
-
-        jLabel310.setText("--");
-
-        jLabel311.setText("--");
-
-        jLabel312.setText("--");
-
-        jLabel313.setText("--");
-
-        jLabel314.setText("--");
-
-        move35.setText("Show Effect");
-        move35.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                move35ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel68Layout = new javax.swing.GroupLayout(jPanel68);
-        jPanel68.setLayout(jPanel68Layout);
-        jPanel68Layout.setHorizontalGroup(
-            jPanel68Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel68Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(moveName16, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel309)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel310)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel311)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel312)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel313)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel314)
-                .addGap(18, 18, 18)
-                .addComponent(move35)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel68Layout.setVerticalGroup(
-            jPanel68Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel68Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel68Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(moveName16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel309)
-                    .addComponent(jLabel310)
-                    .addComponent(jLabel311)
-                    .addComponent(jLabel312)
-                    .addComponent(jLabel313)
-                    .addComponent(jLabel314)
-                    .addComponent(move35))
-                .addGap(6, 6, 6))
         );
 
         javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
@@ -3097,59 +2093,30 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jPanel31Layout.setHorizontalGroup(
             jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel52, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel53, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel64, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel65, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel66, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel67, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel68, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel31Layout.createSequentialGroup()
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel31Layout.createSequentialGroup()
+                        .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel31Layout.createSequentialGroup()
+                        .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 39, Short.MAX_VALUE))
         );
         jPanel31Layout.setVerticalGroup(
             jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel31Layout.createSequentialGroup()
                 .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, 0)
-                .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -3170,10 +2137,6 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
         jLabel315.setText("Ability");
 
-        jLabel316.setText("Frequency");
-
-        jLabel317.setText("Effect");
-
         javax.swing.GroupLayout jPanel69Layout = new javax.swing.GroupLayout(jPanel69);
         jPanel69.setLayout(jPanel69Layout);
         jPanel69Layout.setHorizontalGroup(
@@ -3181,28 +2144,30 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(jPanel69Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel315, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel316)
-                .addGap(40, 40, 40)
-                .addComponent(jLabel317)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel69Layout.setVerticalGroup(
             jPanel69Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel69Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addGroup(jPanel69Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel315)
-                    .addComponent(jLabel316)
-                    .addComponent(jLabel317))
+                .addComponent(jLabel315)
                 .addGap(6, 6, 6))
         );
 
         jPanel73.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel327.setText("--");
+        abilityName1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                abilityName1KeyPressed(evt);
+            }
+        });
 
-        jButton3.setText("Show Effect");
+        ability1.setText("Show Effect");
+        ability1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ability1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel73Layout = new javax.swing.GroupLayout(jPanel73);
         jPanel73.setLayout(jPanel73Layout);
@@ -3210,29 +2175,26 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel73Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel327, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addContainerGap())
+                .addComponent(abilityName1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ability1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel73Layout.setVerticalGroup(
             jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel73Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addGroup(jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel327)
-                    .addComponent(jButton3))
+                    .addComponent(abilityName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ability1))
                 .addGap(5, 5, 5))
         );
 
         jPanel74.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel328.setText("--");
+        abilityName2.setEditable(false);
 
-        jButton4.setText("Show Effect");
+        ability2.setText("Show Effect");
 
         javax.swing.GroupLayout jPanel74Layout = new javax.swing.GroupLayout(jPanel74);
         jPanel74.setLayout(jPanel74Layout);
@@ -3240,29 +2202,26 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel74Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel74Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel328, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addContainerGap())
+                .addComponent(abilityName2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ability2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel74Layout.setVerticalGroup(
             jPanel74Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel74Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addGroup(jPanel74Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel328)
-                    .addComponent(jButton4))
+                    .addComponent(abilityName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ability2))
                 .addGap(5, 5, 5))
         );
 
         jPanel75.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel329.setText("--");
+        abilityName3.setEditable(false);
 
-        jButton5.setText("Show Effect");
+        ability3.setText("Show Effect");
 
         javax.swing.GroupLayout jPanel75Layout = new javax.swing.GroupLayout(jPanel75);
         jPanel75.setLayout(jPanel75Layout);
@@ -3270,29 +2229,26 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel75Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel75Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel329, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton5)
-                .addContainerGap())
+                .addComponent(abilityName3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ability3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel75Layout.setVerticalGroup(
             jPanel75Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel75Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addGroup(jPanel75Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel329)
-                    .addComponent(jButton5))
+                    .addComponent(abilityName3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ability3))
                 .addGap(5, 5, 5))
         );
 
         jPanel76.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel330.setText("--");
+        abilityName4.setEditable(false);
 
-        jButton7.setText("Show Effect");
+        ability4.setText("Show Effect");
 
         javax.swing.GroupLayout jPanel76Layout = new javax.swing.GroupLayout(jPanel76);
         jPanel76.setLayout(jPanel76Layout);
@@ -3300,21 +2256,18 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel76Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel330, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton7)
-                .addContainerGap())
+                .addComponent(abilityName4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(ability4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel76Layout.setVerticalGroup(
             jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel76Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addGroup(jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel330)
-                    .addComponent(jButton7))
+                    .addComponent(abilityName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ability4))
                 .addGap(5, 5, 5))
         );
 
@@ -3352,7 +2305,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
         jLabel60.setText("Base");
 
-        jLabel61.setText("Total: " + t.getStatPointsRemaining());
+        statsLeft.setText("" + t.getStatPointsRemaining());
 
         jLabel62.setText("Points");
 
@@ -3368,7 +2321,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel62)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(statsLeft, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel90Layout.setVerticalGroup(
@@ -3378,7 +2331,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGroup(jPanel90Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel382, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel60)
-                    .addComponent(jLabel61)
+                    .addComponent(statsLeft)
                     .addComponent(jLabel62))
                 .addGap(3, 3, 3))
         );
@@ -3393,6 +2346,11 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
         hpPoints.setText("0");
         hpPoints.setPreferredSize(new java.awt.Dimension(30, 20));
+        hpPoints.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                hpPointsKeyPressed(evt);
+            }
+        });
         hpPoints.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
                 String value = hpPoints.getText();
@@ -3405,7 +2363,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel65.setText(String.valueOf(getHPTotal()));
+        hpTotal.setText(String.valueOf(getHPBase()));
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -3419,7 +2377,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(hpPoints, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel65)
+                .addComponent(hpTotal)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
@@ -3430,7 +2388,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel64)
                     .addComponent(hpPoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel65))
+                    .addComponent(hpTotal))
                 .addGap(3, 3, 3))
         );
 
@@ -3439,11 +2397,16 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel66.setText("Attack");
         jLabel66.setPreferredSize(new java.awt.Dimension(60, 13));
 
-        jLabel67.setText(String.valueOf(getHPBase())
+        jLabel67.setText(String.valueOf(getAtkBase())
         );
 
         atkPoints.setText("0");
         atkPoints.setPreferredSize(new java.awt.Dimension(30, 20));
+        atkPoints.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                atkPointsKeyPressed(evt);
+            }
+        });
         hpPoints.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
                 String value = hpPoints.getText();
@@ -3456,7 +2419,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel68.setText(String.valueOf(getHPTotal()));
+        atkTotal.setText(String.valueOf(getAtkBase()));
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
@@ -3470,7 +2433,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(atkPoints, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel68)
+                .addComponent(atkTotal)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
@@ -3481,7 +2444,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel67)
                     .addComponent(atkPoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel68))
+                    .addComponent(atkTotal))
                 .addGap(3, 3, 3))
         );
 
@@ -3490,11 +2453,16 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel69.setText("Defense");
         jLabel69.setPreferredSize(new java.awt.Dimension(60, 13));
 
-        jLabel70.setText(String.valueOf(getHPBase())
+        jLabel70.setText(String.valueOf(getDefBase())
         );
 
         defPoints.setText("0");
         defPoints.setPreferredSize(new java.awt.Dimension(30, 20));
+        defPoints.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                defPointsKeyPressed(evt);
+            }
+        });
         hpPoints.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
                 String value = hpPoints.getText();
@@ -3507,7 +2475,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel71.setText(String.valueOf(getHPTotal()));
+        defTotal.setText(String.valueOf(getDefBase()));
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
@@ -3521,7 +2489,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(defPoints, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel71)
+                .addComponent(defTotal)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel20Layout.setVerticalGroup(
@@ -3532,7 +2500,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel70)
                     .addComponent(defPoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel71))
+                    .addComponent(defTotal))
                 .addGap(3, 3, 3))
         );
 
@@ -3541,11 +2509,16 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel72.setText("Sp Attack");
         jLabel72.setPreferredSize(new java.awt.Dimension(60, 13));
 
-        jLabel73.setText(String.valueOf(getHPBase())
+        jLabel73.setText(String.valueOf(getSpAtkBase())
         );
 
         spAtkPoints.setText("0");
         spAtkPoints.setPreferredSize(new java.awt.Dimension(30, 20));
+        spAtkPoints.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                spAtkPointsKeyPressed(evt);
+            }
+        });
         hpPoints.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
                 String value = hpPoints.getText();
@@ -3558,7 +2531,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel74.setText(String.valueOf(getHPTotal()));
+        spAtkTotal.setText(String.valueOf(getSpAtkBase()));
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -3572,7 +2545,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(spAtkPoints, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel74)
+                .addComponent(spAtkTotal)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel21Layout.setVerticalGroup(
@@ -3583,7 +2556,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel73)
                     .addComponent(spAtkPoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel74))
+                    .addComponent(spAtkTotal))
                 .addGap(3, 3, 3))
         );
 
@@ -3592,11 +2565,16 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel93.setText("Sp Defense");
         jLabel93.setPreferredSize(new java.awt.Dimension(60, 13));
 
-        jLabel94.setText(String.valueOf(getHPBase())
+        jLabel94.setText(String.valueOf(getSpDefBase())
         );
 
         spDefPoints.setText("0");
         spDefPoints.setPreferredSize(new java.awt.Dimension(30, 20));
+        spDefPoints.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                spDefPointsKeyPressed(evt);
+            }
+        });
         hpPoints.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
                 String value = hpPoints.getText();
@@ -3609,7 +2587,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel95.setText(String.valueOf(getHPTotal()));
+        spDefTotal.setText(String.valueOf(getSpDefBase()));
 
         javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
         jPanel27.setLayout(jPanel27Layout);
@@ -3623,7 +2601,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(spDefPoints, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel95)
+                .addComponent(spDefTotal)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel27Layout.setVerticalGroup(
@@ -3634,7 +2612,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel94)
                     .addComponent(spDefPoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel95))
+                    .addComponent(spDefTotal))
                 .addGap(3, 3, 3))
         );
 
@@ -3643,11 +2621,16 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel96.setText("Speed");
         jLabel96.setPreferredSize(new java.awt.Dimension(60, 13));
 
-        jLabel97.setText(String.valueOf(getHPBase())
+        jLabel97.setText(String.valueOf(getSpdBase())
         );
 
         spdPoints.setText("0");
         spdPoints.setPreferredSize(new java.awt.Dimension(30, 20));
+        spdPoints.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                spdPointsKeyPressed(evt);
+            }
+        });
         hpPoints.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
                 String value = hpPoints.getText();
@@ -3660,7 +2643,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel98.setText(String.valueOf(getHPTotal()));
+        spdTotal.setText(String.valueOf(getSpdBase()));
 
         javax.swing.GroupLayout jPanel28Layout = new javax.swing.GroupLayout(jPanel28);
         jPanel28.setLayout(jPanel28Layout);
@@ -3674,7 +2657,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(spdPoints, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel98)
+                .addComponent(spdTotal)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel28Layout.setVerticalGroup(
@@ -3685,7 +2668,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                     .addComponent(jLabel96, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel97)
                     .addComponent(spdPoints, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel98))
+                    .addComponent(spdTotal))
                 .addGap(3, 3, 3))
         );
 
@@ -3921,74 +2904,34 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         try {
             Class<Move> move = (Class<Move>)Class.forName("PTUCharacterCreator.Moves." + moveName1.getText().replace(" ", "_").replace("'","_"));
             Move tempMove = (Move) move.getDeclaredConstructor().newInstance();
-            
-            
+            showMove(tempMove);
         } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
             Logger.getLogger(Trainer.class.getName()).log(null, null, ex);
             JOptionPane.showMessageDialog(null,"Not a Move");
         }
     }//GEN-LAST:event_effect1ActionPerformed
-
-    private void move5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move5ActionPerformed
-
-    private void move6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move6ActionPerformed
-
-    private void move16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move16ActionPerformed
-
-    private void move17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move17ActionPerformed
-
-    private void move18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move18ActionPerformed
-
-    private void move19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move19ActionPerformed
-
-    private void move20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move20ActionPerformed
-
-    private void move28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move28ActionPerformed
-
-    private void move29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move29ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move29ActionPerformed
-
-    private void move30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move30ActionPerformed
-
-    private void move31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move31ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move31ActionPerformed
-
-    private void move32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move32ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move32ActionPerformed
-
-    private void move33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move33ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move33ActionPerformed
-
-    private void move34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move34ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move34ActionPerformed
-
-    private void move35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_move35ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_move35ActionPerformed
-
+    
+    private void showMove(Move move){
+        String temp = "Name: " + move.getName() + "\n";
+        temp += "DB: " + move.getMDB() + "\n";
+        temp += "Freq: " + move.getFreq() + "\n";
+        temp += "AC: " + move.getAC() + "\n";
+        temp += "Category: " + move.getCategory() + "\n";
+        temp += "Range: " + move.getRange() + "\n";
+        String effect = "Effect: " + move.getEffect() + "\n";
+        boolean flag = false;
+        for(int i = 0; i < effect.length(); i++){
+            if(flag && effect.charAt(i) == ' '){
+                temp += "\n";
+                flag = false;
+            }else if(i%50 == 0 && i != 0){
+                flag = true;
+            }
+            temp += effect.charAt(i);
+        }
+        JOptionPane.showMessageDialog(null, temp);
+    }
+    
     private void enter(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_enter
         // TODO add your handling code here:
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
@@ -4066,6 +3009,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         int bonus = JOptionPane.showConfirmDialog(null,"Bonus Feat?");
         t.addFeature(featureLookup.getText(), bonus);
+        updateStats();
     }//GEN-LAST:event_addFeatureActionPerformed
 
     private void edgeLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edgeLookupActionPerformed
@@ -4086,6 +3030,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         boolean flag = t.addEdge(edgeName.getText().replace(" ", "_"), bonus);
         if(flag){
             updateSkills();
+            updateEdges();
         }
     }//GEN-LAST:event_addEdgeButtonActionPerformed
 
@@ -4105,61 +3050,191 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private void moveName1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moveName1KeyPressed
         // TODO add your handling code here:
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
-            if(t.addMove(moveName1.getText(),1)){
-                try{
-                    Class<Move> temp =
-                        (Class<Move>)Class.forName(moveName1.getText());
-                    Move move = (Move)temp.getDeclaredConstructor().newInstance();
-                    type1.setText(move.getType());
-                    category1.setText(move.getCategory());
-                    db1.setText(String.valueOf(move.getDB()));
-                    freq1.setText(move.getFreq());
-                    ac1.setText(String.valueOf(move.getAC()));
-                    range1.setText(move.getRange());
-                    effect1.setText(move.getName());
-                } catch (ClassNotFoundException | IllegalAccessException | IllegalArgumentException | InstantiationException | NoSuchMethodException | SecurityException | InvocationTargetException ex){}
-            }else{
-                JOptionPane.showMessageDialog(null, "Not a move or already have.");
-                type1.setText("--");
-                category1.setText("--");
-                db1.setText("--");
-                freq1.setText("--");
-                ac1.setText("--");
-                range1.setText("--");
-                effect1.setText("Show Effect");
+            if(t.addMove(moveName1.getText().replace(" ", "_").replace("'", ""),1)){
+                moveName2.setEnabled(true);
             }
         }
     }//GEN-LAST:event_moveName1KeyPressed
 
     private void removeEdgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeEdgeActionPerformed
         // TODO add your handling code here:
-        t.removeEdge(edgeName.getText());
+        t.removeEdge(edgeName.getText().replace(" ", "_"));
         updateSkills();
+        updateEdges();
     }//GEN-LAST:event_removeEdgeActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        t.removeFeat(featureLookup.getText());
+        t.removeFeat(featureLookup.getText().replace(" ", "_"));
+        updateStats();
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void classFeat6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_classFeat6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_classFeat6ActionPerformed
+
+    private void moveName2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moveName2KeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            if(t.addMove(moveName2.getText().replace(" ", "_").replace("'", ""),1)){
+                moveName3.setEnabled(true);
+            }
+        }
+    }//GEN-LAST:event_moveName2KeyPressed
+
+    private void effect3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_effect3ActionPerformed
+        // TODO add your handling code here:
+        try {
+            Class<Move> move = (Class<Move>)Class.forName("PTUCharacterCreator.Moves." + moveName2.getText().replace(" ", "_").replace("'","_"));
+            Move tempMove = (Move) move.getDeclaredConstructor().newInstance();
+            showMove(tempMove);
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(null, null, ex);
+            JOptionPane.showMessageDialog(null,"Not a Move");
+        }
+    }//GEN-LAST:event_effect3ActionPerformed
+
+    private void moveName3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moveName3KeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            if(t.addMove(moveName3.getText().replace(" ", "_").replace("'", ""),1)){
+                moveName4.setEnabled(true);
+            }
+        }
+    }//GEN-LAST:event_moveName3KeyPressed
+
+    private void effect4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_effect4ActionPerformed
+        // TODO add your handling code here:
+        try {
+            Class<Move> move = (Class<Move>)Class.forName("PTUCharacterCreator.Moves." + moveName3.getText().replace(" ", "_").replace("'","_"));
+            Move tempMove = (Move) move.getDeclaredConstructor().newInstance();
+            showMove(tempMove);
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(null, null, ex);
+            JOptionPane.showMessageDialog(null,"Not a Move");
+        }
+    }//GEN-LAST:event_effect4ActionPerformed
+
+    private void moveName4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moveName4KeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            t.addMove(moveName4.getText().replace(" ", "_").replace("'", ""),4);
+        }
+    }//GEN-LAST:event_moveName4KeyPressed
+
+    private void effect5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_effect5ActionPerformed
+        // TODO add your handling code here:
+        try {
+            Class<Move> move = (Class<Move>)Class.forName("PTUCharacterCreator.Moves." + moveName4.getText().replace(" ", "_").replace("'","_"));
+            Move tempMove = (Move) move.getDeclaredConstructor().newInstance();
+            showMove(tempMove);
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(null, null, ex);
+            JOptionPane.showMessageDialog(null,"Not a Move");
+        }
+    }//GEN-LAST:event_effect5ActionPerformed
+
+    private void abilityName1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_abilityName1KeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            if(t.addAbility(abilityName1.getText().replace(" ", "_").replace("'", ""),1)){
+                abilityName2.setEnabled(true);
+            }
+        }
+    }//GEN-LAST:event_abilityName1KeyPressed
+
+    private void ability1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ability1ActionPerformed
+        // TODO add your handling code here:
+        try {
+            Class<Ability> ability = (Class<Ability>)Class.forName("PTUCharacterCreator.Abilities." + abilityName1.getText().replace(" ", "_").replace("'","_"));   
+            Ability tempAbility = (Ability) ability.getDeclaredConstructor().newInstance();
+            showAbility(tempAbility);
+        } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+            Logger.getLogger(Trainer.class.getName()).log(null, null, ex);
+            JOptionPane.showMessageDialog(null,"Not an Ability");
+        }
+    }//GEN-LAST:event_ability1ActionPerformed
+
+    private void hpPointsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_hpPointsKeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            t.incLHP(Integer.parseInt(hpPoints.getText()));
+            updateStats();
+        }
+    }//GEN-LAST:event_hpPointsKeyPressed
+
+    private void atkPointsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_atkPointsKeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            t.incLAtk(Integer.parseInt(atkPoints.getText()));
+            updateStats();
+        }
+    }//GEN-LAST:event_atkPointsKeyPressed
+
+    private void defPointsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_defPointsKeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            t.incLDef(Integer.parseInt(defPoints.getText()));
+            updateStats();
+        }
+    }//GEN-LAST:event_defPointsKeyPressed
+
+    private void spAtkPointsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spAtkPointsKeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            t.incLSpAtk(Integer.parseInt(spAtkPoints.getText()));
+            updateStats();
+        }
+    }//GEN-LAST:event_spAtkPointsKeyPressed
+
+    private void spDefPointsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spDefPointsKeyPressed
+        // TODO add your handling code here
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            t.incLSpDef(Integer.parseInt(spDefPoints.getText()));
+            updateStats();
+        }
+    }//GEN-LAST:event_spDefPointsKeyPressed
+
+    private void spdPointsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_spdPointsKeyPressed
+        // TODO add your handling code here:
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+            t.incLSpd(Integer.parseInt(spdPoints.getText()));
+            updateStats();
+        }
+    }//GEN-LAST:event_spdPointsKeyPressed
     
-    private int getAtkBase(){
-        return 5;
+    private void updateStats(){
+        int[] temp = t.getStats();
+        hpTotal.setText("" + (temp[0] + getHPBase()));
+        atkTotal.setText("" + (temp[1] + getAtkBase()));
+        defTotal.setText("" + (temp[2] + getDefBase()));
+        spAtkTotal.setText("" + (temp[3] + getSpAtkBase()));
+        spDefTotal.setText("" + (temp[4] + getSpDefBase()));
+        spdTotal.setText("" + (temp[5] + getSpdBase()));
+        statsLeft.setText("" + t.getStatPointsRemaining());
     }
-    
-    private int getAtkTotal(){
+    private void showAbility(Ability ability){
+        String temp = "Name: " + ability.getName() + "\n";
+        temp += "Freq: " + ability.getFreq() + "\n";
+        String effect = "Effect: " + ability.getEffect().replace("\n","") + "\n";
+        boolean flag = false;
+        for(int i = 0; i < effect.length(); i++){
+            if(flag && effect.charAt(i) == ' '){
+                temp += "\n";
+                flag = false;
+            }else if(i%50 == 0 && i != 0){
+                flag = true;
+            }
+            temp += effect.charAt(i);
+        }
+        JOptionPane.showMessageDialog(null, temp);
+    }
+    private int getAtkBase(){
         return 5;
     }
     
     private int getHPBase(){
         return 10;
-    }
-    
-    private int getHPTotal(){
-        return 10 + Integer.parseInt(hpPoints.getText());
     }
     
     private int getDefBase(){
@@ -4178,7 +3253,22 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         return 5;
     }
     
-    private void displayMove(int number){
+    private void updateEdges(){
+        ArrayList<Edge> edges = t.getEdges();
+        String temp = "";
+        for(Edge edge : edges){
+            temp += edge.getName() + ", ";
+        }
+        String result = "";
+        for(int i = 0; i < temp.length(); i++){
+            if(i%100 == 0 && i != 0){
+                result += "\n";
+            }
+            result += temp.charAt(i);
+        }
+        edgeList.setText(result);
+        usedEdges.setText("Edges Used: " + t.getEdgesTotal());
+        remainingEdges.setText("Edges Remaining: " + t.getEdgesRemaining());
     }
     
     private void updateSkills(){
@@ -4237,13 +3327,20 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Level;
-    private javax.swing.JLabel ac1;
+    private javax.swing.JButton ability1;
+    private javax.swing.JButton ability2;
+    private javax.swing.JButton ability3;
+    private javax.swing.JButton ability4;
+    private javax.swing.JTextField abilityName1;
+    private javax.swing.JTextField abilityName2;
+    private javax.swing.JTextField abilityName3;
+    private javax.swing.JTextField abilityName4;
     private javax.swing.JLabel acroRank;
     private javax.swing.JButton addEdgeButton;
     private javax.swing.JButton addFeature;
     private javax.swing.JLabel athlRank;
     private javax.swing.JTextField atkPoints;
-    private javax.swing.JLabel category1;
+    private javax.swing.JLabel atkTotal;
     private javax.swing.JPanel characterTab;
     private javax.swing.JLabel charmRank;
     private javax.swing.JTextField class1;
@@ -4282,18 +3379,21 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel combatRank;
     private javax.swing.JPanel combatTab;
     private javax.swing.JLabel commandRank;
-    private javax.swing.JLabel db1;
     private javax.swing.JTextField defPoints;
+    private javax.swing.JLabel defTotal;
     private javax.swing.JTextArea edgeInfo;
+    private javax.swing.JTextArea edgeList;
     private javax.swing.JButton edgeLookup;
     private javax.swing.JTextField edgeName;
     private javax.swing.JPanel edgeTab;
     private javax.swing.JButton effect1;
+    private javax.swing.JButton effect3;
+    private javax.swing.JButton effect4;
+    private javax.swing.JButton effect5;
     private javax.swing.JTextArea featureInfo;
     private javax.swing.JTextField featureLookup;
     private javax.swing.JPanel featureTab;
     private javax.swing.JLabel focusRank;
-    private javax.swing.JLabel freq1;
     private javax.swing.JLabel genEduRank;
     private javax.swing.JTextField genFeat1;
     private javax.swing.JTextField genFeat10;
@@ -4312,15 +3412,12 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel guileRank;
     private javax.swing.JTextField height;
     private javax.swing.JTextField hpPoints;
+    private javax.swing.JLabel hpTotal;
     private javax.swing.JLabel intimidateRank;
     private javax.swing.JLabel intuitionRank;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -4335,129 +3432,29 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox62;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel128;
-    private javax.swing.JLabel jLabel129;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel130;
-    private javax.swing.JLabel jLabel131;
-    private javax.swing.JLabel jLabel132;
-    private javax.swing.JLabel jLabel133;
     private javax.swing.JLabel jLabel134;
-    private javax.swing.JLabel jLabel135;
-    private javax.swing.JLabel jLabel136;
-    private javax.swing.JLabel jLabel137;
-    private javax.swing.JLabel jLabel138;
-    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel140;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel195;
-    private javax.swing.JLabel jLabel196;
-    private javax.swing.JLabel jLabel197;
-    private javax.swing.JLabel jLabel198;
-    private javax.swing.JLabel jLabel199;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel200;
-    private javax.swing.JLabel jLabel201;
-    private javax.swing.JLabel jLabel202;
-    private javax.swing.JLabel jLabel203;
-    private javax.swing.JLabel jLabel204;
-    private javax.swing.JLabel jLabel205;
-    private javax.swing.JLabel jLabel206;
-    private javax.swing.JLabel jLabel207;
-    private javax.swing.JLabel jLabel208;
-    private javax.swing.JLabel jLabel209;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel210;
-    private javax.swing.JLabel jLabel211;
-    private javax.swing.JLabel jLabel212;
-    private javax.swing.JLabel jLabel213;
-    private javax.swing.JLabel jLabel214;
-    private javax.swing.JLabel jLabel215;
-    private javax.swing.JLabel jLabel216;
-    private javax.swing.JLabel jLabel217;
-    private javax.swing.JLabel jLabel218;
-    private javax.swing.JLabel jLabel219;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel220;
-    private javax.swing.JLabel jLabel221;
-    private javax.swing.JLabel jLabel222;
-    private javax.swing.JLabel jLabel223;
-    private javax.swing.JLabel jLabel224;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel267;
-    private javax.swing.JLabel jLabel268;
-    private javax.swing.JLabel jLabel269;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel270;
-    private javax.swing.JLabel jLabel271;
-    private javax.swing.JLabel jLabel272;
-    private javax.swing.JLabel jLabel273;
-    private javax.swing.JLabel jLabel274;
-    private javax.swing.JLabel jLabel275;
-    private javax.swing.JLabel jLabel276;
-    private javax.swing.JLabel jLabel277;
-    private javax.swing.JLabel jLabel278;
-    private javax.swing.JLabel jLabel279;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel280;
-    private javax.swing.JLabel jLabel281;
-    private javax.swing.JLabel jLabel282;
-    private javax.swing.JLabel jLabel283;
-    private javax.swing.JLabel jLabel284;
-    private javax.swing.JLabel jLabel285;
-    private javax.swing.JLabel jLabel286;
-    private javax.swing.JLabel jLabel287;
-    private javax.swing.JLabel jLabel288;
-    private javax.swing.JLabel jLabel289;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel290;
-    private javax.swing.JLabel jLabel291;
-    private javax.swing.JLabel jLabel292;
-    private javax.swing.JLabel jLabel293;
-    private javax.swing.JLabel jLabel294;
-    private javax.swing.JLabel jLabel295;
-    private javax.swing.JLabel jLabel296;
-    private javax.swing.JLabel jLabel297;
-    private javax.swing.JLabel jLabel298;
-    private javax.swing.JLabel jLabel299;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel300;
-    private javax.swing.JLabel jLabel301;
-    private javax.swing.JLabel jLabel302;
-    private javax.swing.JLabel jLabel303;
-    private javax.swing.JLabel jLabel304;
-    private javax.swing.JLabel jLabel305;
-    private javax.swing.JLabel jLabel306;
-    private javax.swing.JLabel jLabel307;
-    private javax.swing.JLabel jLabel308;
-    private javax.swing.JLabel jLabel309;
-    private javax.swing.JLabel jLabel310;
-    private javax.swing.JLabel jLabel311;
-    private javax.swing.JLabel jLabel312;
-    private javax.swing.JLabel jLabel313;
-    private javax.swing.JLabel jLabel314;
     private javax.swing.JLabel jLabel315;
-    private javax.swing.JLabel jLabel316;
-    private javax.swing.JLabel jLabel317;
-    private javax.swing.JLabel jLabel327;
-    private javax.swing.JLabel jLabel328;
-    private javax.swing.JLabel jLabel329;
-    private javax.swing.JLabel jLabel330;
     private javax.swing.JLabel jLabel382;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel48;
@@ -4465,29 +3462,22 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
@@ -4498,11 +3488,8 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
-    private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
     private javax.swing.JLabel jLabel97;
-    private javax.swing.JLabel jLabel98;
-    private javax.swing.JLabel jLabel99;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
@@ -4529,24 +3516,12 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
-    private javax.swing.JPanel jPanel38;
-    private javax.swing.JPanel jPanel39;
+    private javax.swing.JPanel jPanel36;
+    private javax.swing.JPanel jPanel37;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel50;
-    private javax.swing.JPanel jPanel51;
-    private javax.swing.JPanel jPanel52;
-    private javax.swing.JPanel jPanel53;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel61;
-    private javax.swing.JPanel jPanel62;
-    private javax.swing.JPanel jPanel63;
-    private javax.swing.JPanel jPanel64;
-    private javax.swing.JPanel jPanel65;
-    private javax.swing.JPanel jPanel66;
-    private javax.swing.JPanel jPanel67;
-    private javax.swing.JPanel jPanel68;
     private javax.swing.JPanel jPanel69;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel73;
@@ -4599,7 +3574,6 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner8;
     private javax.swing.JSpinner jSpinner9;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea4;
@@ -4608,11 +3582,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
-    private javax.swing.JTextField jTextField45;
     private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField51;
     private javax.swing.JTextField jTextField6;
     private javax.swing.ButtonGroup jsonRadioButtons;
     private javax.swing.JPanel jsonTab;
@@ -4620,54 +3590,29 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JTextField level;
     private javax.swing.JLabel medEduRank;
     private javax.swing.JTextField miscExp;
-    private javax.swing.JButton move16;
-    private javax.swing.JButton move17;
-    private javax.swing.JButton move18;
-    private javax.swing.JButton move19;
-    private javax.swing.JButton move20;
-    private javax.swing.JButton move28;
-    private javax.swing.JButton move29;
-    private javax.swing.JButton move30;
-    private javax.swing.JButton move31;
-    private javax.swing.JButton move32;
-    private javax.swing.JButton move33;
-    private javax.swing.JButton move34;
-    private javax.swing.JButton move35;
-    private javax.swing.JButton move5;
-    private javax.swing.JButton move6;
     private javax.swing.JTextField moveName1;
-    private javax.swing.JTextField moveName10;
-    private javax.swing.JTextField moveName11;
-    private javax.swing.JTextField moveName12;
-    private javax.swing.JTextField moveName13;
-    private javax.swing.JTextField moveName14;
-    private javax.swing.JTextField moveName15;
-    private javax.swing.JTextField moveName16;
     private javax.swing.JTextField moveName2;
     private javax.swing.JTextField moveName3;
     private javax.swing.JTextField moveName4;
-    private javax.swing.JTextField moveName5;
-    private javax.swing.JTextField moveName6;
-    private javax.swing.JTextField moveName7;
-    private javax.swing.JTextField moveName8;
-    private javax.swing.JTextField moveName9;
     private javax.swing.JLabel ocuEduRank;
     private javax.swing.JLabel perceptionRank;
     private javax.swing.JLabel pokeEduRank;
-    private javax.swing.JLabel range1;
     private javax.swing.JLabel remainingEdges;
     private javax.swing.JLabel remainingFeats;
     private javax.swing.JButton removeEdge;
     private javax.swing.JTextField spAtkPoints;
+    private javax.swing.JLabel spAtkTotal;
     private javax.swing.JTextField spDefPoints;
+    private javax.swing.JLabel spDefTotal;
     private javax.swing.JTextField spdPoints;
+    private javax.swing.JLabel spdTotal;
+    private javax.swing.JLabel statsLeft;
     private javax.swing.JLabel stealthRank;
     private javax.swing.JLabel survivalRank;
     private javax.swing.JLabel techEduRank;
     private javax.swing.JTextField trainerName;
     private javax.swing.JRadioButton txtAreaJSON;
     private javax.swing.JRadioButton txtFileJSON;
-    private javax.swing.JLabel type1;
     private javax.swing.JLabel usedEdges;
     private javax.swing.JLabel usedFeats;
     private javax.swing.JTextField weight;

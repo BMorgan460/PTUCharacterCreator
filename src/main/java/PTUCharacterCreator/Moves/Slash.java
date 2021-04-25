@@ -5,6 +5,7 @@ public class Slash extends Move {
 		name = "Slash";
 		effect = "Slash is a Critical Hit on 18+.";
 		damageBase = 7;
+		mDamageBase = 7;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, Pass";

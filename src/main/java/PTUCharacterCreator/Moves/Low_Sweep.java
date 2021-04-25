@@ -5,6 +5,7 @@ public class Low_Sweep extends Move {
 		name = "Low Sweep";
 		effect = "Lower the target’s Speed by -1 CS.";
 		damageBase = 7;
+		mDamageBase = 7;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, 1 Target";

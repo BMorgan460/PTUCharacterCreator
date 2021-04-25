@@ -5,6 +5,7 @@ public class Hidden_Power_Ice extends Move {
 		name = "Hidden Power Ice";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1";

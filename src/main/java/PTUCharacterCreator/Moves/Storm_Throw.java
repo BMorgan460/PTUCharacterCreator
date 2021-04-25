@@ -5,6 +5,7 @@ public class Storm_Throw extends Move {
 		name = "Storm Throw";
 		effect = "If Storm Throw hits, it is a Critical Hit.";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, 1 Target";

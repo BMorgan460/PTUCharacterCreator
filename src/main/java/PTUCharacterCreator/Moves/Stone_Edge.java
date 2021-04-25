@@ -5,6 +5,7 @@ public class Stone_Edge extends Move {
 		name = "Stone Edge";
 		effect = "Stone Edge is a Critical Hit on 17+.";
 		damageBase = 10;
+		mDamageBase = 10;
 		AC = 5;
 		frequency = "EOT";
 		range = "8, 1 Target";

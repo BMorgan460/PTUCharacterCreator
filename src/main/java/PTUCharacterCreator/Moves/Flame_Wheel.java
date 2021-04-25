@@ -5,6 +5,7 @@ public class Flame_Wheel extends Move {
 		name = "Flame Wheel";
 		effect = "Flame Wheel Burns the target on 19+.";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "At-Will";
 		range = "Melee, 1 Target, Dash";

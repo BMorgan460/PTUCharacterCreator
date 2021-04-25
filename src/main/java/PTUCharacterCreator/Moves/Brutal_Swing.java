@@ -5,6 +5,7 @@ public class Brutal_Swing extends Move {
 		name = "Brutal Swing";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "At-Will";
 		range = "Melee, Burst 1";

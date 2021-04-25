@@ -10,6 +10,9 @@
     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
       <Color id="Default Cursor"/>
     </Property>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[736, 750]"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -2542,7 +2545,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JTextArea" name="jTextArea1">
+                    <Component class="javax.swing.JTextArea" name="edgeList">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                         <Property name="columns" type="int" value="20"/>
@@ -2792,22 +2795,21 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jPanel32" max="32767" attributes="0"/>
-                          <Component id="jPanel33" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel38" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel39" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel49" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel50" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel51" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel52" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel53" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel34" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel62" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel63" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel64" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel65" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel66" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel67" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jPanel68" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jPanel33" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                      <Component id="jPanel34" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jPanel36" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                                      <Component id="jPanel37" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="39" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -2815,37 +2817,15 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jPanel32" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel33" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jPanel33" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jPanel34" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel38" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel39" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel49" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel50" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel51" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel52" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel53" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel34" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel62" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel63" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel64" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel65" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel66" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel67" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="jPanel68" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="jPanel36" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jPanel37" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -2867,20 +2847,6 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel53" min="-2" pref="66" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jLabel99" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jLabel100" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jLabel101" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jLabel102" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                                  <Component id="jLabel103" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2889,18 +2855,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jLabel103" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jLabel53" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel54" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel99" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel100" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel101" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="jLabel102" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
+                                  <Component id="jLabel53" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2909,42 +2864,7 @@
                       <SubComponents>
                         <Component class="javax.swing.JLabel" name="jLabel53">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Name"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel54">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Type"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel55">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Category"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel99">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="DB"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel100">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Frequency"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel101">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="AC"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel102">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Range"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel103">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Effect"/>
+                            <Property name="text" type="java.lang.String" value="Moves"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -2964,19 +2884,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="moveName1" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="type1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="category1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="db1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="freq1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="ac1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="range1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="effect1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
@@ -2988,15 +2896,9 @@
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="moveName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="type1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="category1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="db1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="freq1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="ac1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="range1" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="effect1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -3007,707 +2909,12 @@
                             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="moveName1KeyPressed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="type1">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="category1">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="db1">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="freq1">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="ac1">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="range1">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
                         <Component class="javax.swing.JButton" name="effect1">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
+                            <Property name="text" type="java.lang.String" value="Show Move"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="effect1ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel38">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName2" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel128" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel129" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel130" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel131" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel132" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel133" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel128" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel129" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel130" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel131" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel132" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel133" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName2">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel128">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel129">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel130">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel131">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel132">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel133">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move5">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move5ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel39">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName3" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel135" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel136" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel137" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel138" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel135" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel136" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel137" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel138" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel139" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName3">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel135">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel136">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel137">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel138">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel139">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel140">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move6">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move6ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel49">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName4" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel195" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel196" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel197" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel198" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel199" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel200" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move16" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel195" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel196" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel197" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel198" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel199" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel200" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName4">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel195">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel196">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel197">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel198">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel199">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel200">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move16">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move16ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel50">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName5" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel201" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel202" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel203" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel204" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel205" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel206" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move17" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel201" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel202" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel203" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel204" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel205" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel206" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move17" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName5">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel201">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel202">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel203">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel204">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel205">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel206">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move17">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move17ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel51">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName6" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel207" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel208" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel209" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel210" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel211" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel212" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move18" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel207" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel208" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel209" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel210" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel211" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel212" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName6">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel207">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel208">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel209">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel210">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel211">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel212">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move18">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move18ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel52">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName7" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel213" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel214" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel215" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel216" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel217" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel218" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move19" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel213" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel214" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel215" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel216" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel217" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel218" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move19" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName7">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel213">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel214">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel215">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel216">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel217">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel218">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move19">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move19ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel53">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName8" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel219" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel220" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel221" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel222" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel223" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel224" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move20" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel219" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel220" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel221" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel222" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel223" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel224" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move20" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName8">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel219">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel220">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel221">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel222">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel223">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel224">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move20">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move20ActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
@@ -3726,21 +2933,9 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName9" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel267" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel268" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel269" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel270" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel271" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel272" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move28" min="-2" max="-2" attributes="0"/>
+                                  <Component id="moveName2" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="effect3" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -3750,64 +2945,34 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel267" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel268" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel269" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel270" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel271" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel272" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="effect3" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName9">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel267">
+                        <Component class="javax.swing.JTextField" name="moveName2">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel268">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel269">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel270">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel271">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel272">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move28">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
+                            <Property name="editable" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move28ActionPerformed"/>
+                            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="moveName2KeyPressed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="effect3">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Show Move"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="effect3ActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel62">
+                    <Container class="javax.swing.JPanel" name="jPanel36">
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -3821,21 +2986,9 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName10" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel273" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel274" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel275" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel276" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel277" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel278" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move29" min="-2" max="-2" attributes="0"/>
+                                  <Component id="moveName3" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="effect4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -3845,64 +2998,34 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName10" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel273" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel274" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel275" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel276" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel277" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel278" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move29" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="effect4" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName10">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel273">
+                        <Component class="javax.swing.JTextField" name="moveName3">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel274">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel275">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel276">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel277">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel278">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move29">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
+                            <Property name="editable" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move29ActionPerformed"/>
+                            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="moveName3KeyPressed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="effect4">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Show Move"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="effect4ActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel63">
+                    <Container class="javax.swing.JPanel" name="jPanel37">
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -3916,21 +3039,9 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName11" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel279" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel280" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel281" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel282" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel283" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel284" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move30" min="-2" max="-2" attributes="0"/>
+                                  <Component id="moveName4" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="effect5" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -3940,534 +3051,29 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName11" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel279" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel280" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel281" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel282" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel283" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel284" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="moveName4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="effect5" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName11">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel279">
+                        <Component class="javax.swing.JTextField" name="moveName4">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel280">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel281">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel282">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel283">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel284">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move30">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
+                            <Property name="editable" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move30ActionPerformed"/>
+                            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="moveName4KeyPressed"/>
                           </Events>
                         </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel64">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName12" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel285" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel286" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel287" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel288" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel289" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel290" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move31" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName12" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel285" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel286" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel287" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel288" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel289" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel290" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move31" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName12">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel285">
+                        <Component class="javax.swing.JButton" name="effect5">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel286">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel287">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel288">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel289">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel290">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move31">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
+                            <Property name="text" type="java.lang.String" value="Show Move"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move31ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel65">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName13" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel291" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel292" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel293" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel294" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel295" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel296" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move32" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName13" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel291" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel292" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel293" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel294" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel295" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel296" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move32" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName13">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel291">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel292">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel293">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel294">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel295">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel296">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move32">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move32ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel66">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName14" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel297" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel298" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel299" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel300" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel301" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel302" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move33" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName14" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel297" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel298" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel299" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel300" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel301" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel302" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move33" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName14">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel297">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel298">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel299">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel300">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel301">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel302">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move33">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move33ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel67">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName15" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel303" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel304" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel305" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel306" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel307" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel308" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move34" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel303" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel304" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel305" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel306" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel307" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel308" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move34" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName15">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel303">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel304">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel305">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel306">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel307">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel308">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move34">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move34ActionPerformed"/>
-                          </Events>
-                        </Component>
-                      </SubComponents>
-                    </Container>
-                    <Container class="javax.swing.JPanel" name="jPanel68">
-                      <Properties>
-                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                            <LineBorder/>
-                          </Border>
-                        </Property>
-                      </Properties>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="moveName16" min="-2" pref="71" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel309" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel310" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel311" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel312" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel313" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel314" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="move35" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="moveName16" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel309" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel310" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel311" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel312" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel313" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel314" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="move35" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                      <SubComponents>
-                        <Component class="javax.swing.JTextField" name="moveName16">
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel309">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel310">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel311">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel312">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel313">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel314">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="--"/>
-                          </Properties>
-                        </Component>
-                        <Component class="javax.swing.JButton" name="move35">
-                          <Properties>
-                            <Property name="text" type="java.lang.String" value="Show Effect"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="move35ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="effect5ActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
@@ -4528,10 +3134,6 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel315" min="-2" pref="61" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel316" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                              <Component id="jLabel317" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -4540,11 +3142,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel315" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel316" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel317" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jLabel315" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -4554,16 +3152,6 @@
                     <Component class="javax.swing.JLabel" name="jLabel315">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Ability"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel316">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Frequency"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel317">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Effect"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -4582,12 +3170,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField43" min="-2" pref="59" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel327" max="32767" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="abilityName1" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="ability1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -4596,9 +3182,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField43" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel327" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="abilityName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ability1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
@@ -4606,17 +3191,18 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JTextField" name="jTextField43">
+                    <Component class="javax.swing.JTextField" name="abilityName1">
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="abilityName1KeyPressed"/>
+                      </Events>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel327">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="--"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="jButton3">
+                    <Component class="javax.swing.JButton" name="ability1">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Show Effect"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ability1ActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -4634,12 +3220,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField44" min="-2" pref="59" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel328" max="32767" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="abilityName2" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="ability2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -4648,9 +3232,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField44" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel328" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="abilityName2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ability2" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
@@ -4658,14 +3241,12 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JTextField" name="jTextField44">
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel328">
+                    <Component class="javax.swing.JTextField" name="abilityName2">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="--"/>
+                        <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton4">
+                    <Component class="javax.swing.JButton" name="ability2">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Show Effect"/>
                       </Properties>
@@ -4686,12 +3267,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField45" min="-2" pref="59" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel329" max="32767" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton5" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="abilityName3" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="ability3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -4700,9 +3279,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField45" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel329" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="abilityName3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ability3" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
@@ -4710,14 +3288,12 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JTextField" name="jTextField45">
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel329">
+                    <Component class="javax.swing.JTextField" name="abilityName3">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="--"/>
+                        <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton5">
+                    <Component class="javax.swing.JButton" name="ability3">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Show Effect"/>
                       </Properties>
@@ -4738,12 +3314,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField51" min="-2" pref="59" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel330" max="32767" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton7" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="abilityName4" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="ability4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -4752,9 +3326,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jTextField51" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel330" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="abilityName4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ability4" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
@@ -4762,14 +3335,12 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JTextField" name="jTextField51">
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel330">
+                    <Component class="javax.swing.JTextField" name="abilityName4">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="--"/>
+                        <Property name="editable" type="boolean" value="false"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton7">
+                    <Component class="javax.swing.JButton" name="ability4">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Show Effect"/>
                       </Properties>
@@ -4841,7 +3412,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel62" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel61" min="-2" pref="36" max="-2" attributes="0"/>
+                              <Component id="statsLeft" min="-2" pref="36" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -4853,7 +3424,7 @@
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="jLabel382" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel61" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="statsLeft" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel62" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
@@ -4875,10 +3446,10 @@
                         <Property name="text" type="java.lang.String" value="Base"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel61">
+                    <Component class="javax.swing.JLabel" name="statsLeft">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="&quot;Total: &quot; + t.getStatPointsRemaining()" type="code"/>
+                          <Connection code="&quot;&quot; + t.getStatPointsRemaining()" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -4909,7 +3480,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="hpPoints" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel65" min="-2" max="-2" attributes="0"/>
+                              <Component id="hpTotal" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -4922,7 +3493,7 @@
                                   <Component id="jLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="hpPoints" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="jLabel65" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hpTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                           </Group>
@@ -4952,14 +3523,17 @@
                           <Dimension value="[30, 20]"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="hpPointsKeyPressed"/>
+                      </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="hpPoints.addKeyListener(new KeyAdapter() {&#xd;&#xa;         public void keyPressed(KeyEvent ke) {&#xd;&#xa;            String value = hpPoints.getText();&#xd;&#xa;            int l = value.length();&#xd;&#xa;            if (((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {&#xd;&#xa;               hpPoints.setEditable(true);&#xd;&#xa;            } else {&#xd;&#xa;               hpPoints.setEditable(false);&#xd;&#xa;            }&#xd;&#xa;         }&#xd;&#xa;      });"/>
                       </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel65">
+                    <Component class="javax.swing.JLabel" name="hpTotal">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPTotal())" type="code"/>
+                          <Connection code="String.valueOf(getHPBase())" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -4985,7 +3559,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="atkPoints" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
+                              <Component id="atkTotal" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -4998,7 +3572,7 @@
                                   <Component id="jLabel66" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel67" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="atkPoints" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="jLabel68" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="atkTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                           </Group>
@@ -5017,7 +3591,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel67">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPBase())&#xd;&#xa;" type="code"/>
+                          <Connection code="String.valueOf(getAtkBase())&#xd;&#xa;" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5028,14 +3602,17 @@
                           <Dimension value="[30, 20]"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="atkPointsKeyPressed"/>
+                      </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="hpPoints.addKeyListener(new KeyAdapter() {&#xd;&#xa;         public void keyPressed(KeyEvent ke) {&#xd;&#xa;            String value = hpPoints.getText();&#xd;&#xa;            int l = value.length();&#xd;&#xa;            if (((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {&#xd;&#xa;               hpPoints.setEditable(true);&#xd;&#xa;            } else {&#xd;&#xa;               hpPoints.setEditable(false);&#xd;&#xa;            }&#xd;&#xa;         }&#xd;&#xa;      });"/>
                       </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel68">
+                    <Component class="javax.swing.JLabel" name="atkTotal">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPTotal())" type="code"/>
+                          <Connection code="String.valueOf(getAtkBase())" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5061,7 +3638,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="defPoints" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                              <Component id="defTotal" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -5074,7 +3651,7 @@
                                   <Component id="jLabel69" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel70" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="defPoints" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="jLabel71" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="defTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                           </Group>
@@ -5093,7 +3670,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel70">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPBase())&#xd;&#xa;" type="code"/>
+                          <Connection code="String.valueOf(getDefBase())&#xd;&#xa;" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5104,14 +3681,17 @@
                           <Dimension value="[30, 20]"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="defPointsKeyPressed"/>
+                      </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="hpPoints.addKeyListener(new KeyAdapter() {&#xd;&#xa;         public void keyPressed(KeyEvent ke) {&#xd;&#xa;            String value = hpPoints.getText();&#xd;&#xa;            int l = value.length();&#xd;&#xa;            if (((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {&#xd;&#xa;               hpPoints.setEditable(true);&#xd;&#xa;            } else {&#xd;&#xa;               hpPoints.setEditable(false);&#xd;&#xa;            }&#xd;&#xa;         }&#xd;&#xa;      });"/>
                       </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel71">
+                    <Component class="javax.swing.JLabel" name="defTotal">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPTotal())" type="code"/>
+                          <Connection code="String.valueOf(getDefBase())" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5137,7 +3717,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="spAtkPoints" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
+                              <Component id="spAtkTotal" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -5150,7 +3730,7 @@
                                   <Component id="jLabel72" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel73" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="spAtkPoints" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="jLabel74" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="spAtkTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                           </Group>
@@ -5169,7 +3749,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel73">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPBase())&#xd;&#xa;" type="code"/>
+                          <Connection code="String.valueOf(getSpAtkBase())&#xd;&#xa;" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5180,14 +3760,17 @@
                           <Dimension value="[30, 20]"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="spAtkPointsKeyPressed"/>
+                      </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="hpPoints.addKeyListener(new KeyAdapter() {&#xd;&#xa;         public void keyPressed(KeyEvent ke) {&#xd;&#xa;            String value = hpPoints.getText();&#xd;&#xa;            int l = value.length();&#xd;&#xa;            if (((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {&#xd;&#xa;               hpPoints.setEditable(true);&#xd;&#xa;            } else {&#xd;&#xa;               hpPoints.setEditable(false);&#xd;&#xa;            }&#xd;&#xa;         }&#xd;&#xa;      });"/>
                       </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel74">
+                    <Component class="javax.swing.JLabel" name="spAtkTotal">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPTotal())" type="code"/>
+                          <Connection code="String.valueOf(getSpAtkBase())" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5213,7 +3796,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="spDefPoints" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel95" min="-2" max="-2" attributes="0"/>
+                              <Component id="spDefTotal" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -5226,7 +3809,7 @@
                                   <Component id="jLabel93" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel94" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="spDefPoints" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="jLabel95" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="spDefTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                           </Group>
@@ -5245,7 +3828,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel94">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPBase())&#xd;&#xa;" type="code"/>
+                          <Connection code="String.valueOf(getSpDefBase())&#xd;&#xa;" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5256,14 +3839,17 @@
                           <Dimension value="[30, 20]"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="spDefPointsKeyPressed"/>
+                      </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="hpPoints.addKeyListener(new KeyAdapter() {&#xd;&#xa;         public void keyPressed(KeyEvent ke) {&#xd;&#xa;            String value = hpPoints.getText();&#xd;&#xa;            int l = value.length();&#xd;&#xa;            if (((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {&#xd;&#xa;               hpPoints.setEditable(true);&#xd;&#xa;            } else {&#xd;&#xa;               hpPoints.setEditable(false);&#xd;&#xa;            }&#xd;&#xa;         }&#xd;&#xa;      });"/>
                       </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel95">
+                    <Component class="javax.swing.JLabel" name="spDefTotal">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPTotal())" type="code"/>
+                          <Connection code="String.valueOf(getSpDefBase())" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5289,7 +3875,7 @@
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="spdPoints" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel98" min="-2" max="-2" attributes="0"/>
+                              <Component id="spdTotal" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -5302,7 +3888,7 @@
                                   <Component id="jLabel96" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel97" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="spdPoints" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="jLabel98" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="spdTotal" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                           </Group>
@@ -5321,7 +3907,7 @@
                     <Component class="javax.swing.JLabel" name="jLabel97">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPBase())&#xd;&#xa;" type="code"/>
+                          <Connection code="String.valueOf(getSpdBase())&#xd;&#xa;" type="code"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -5332,14 +3918,17 @@
                           <Dimension value="[30, 20]"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="spdPointsKeyPressed"/>
+                      </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="hpPoints.addKeyListener(new KeyAdapter() {&#xd;&#xa;         public void keyPressed(KeyEvent ke) {&#xd;&#xa;            String value = hpPoints.getText();&#xd;&#xa;            int l = value.length();&#xd;&#xa;            if (((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {&#xd;&#xa;               hpPoints.setEditable(true);&#xd;&#xa;            } else {&#xd;&#xa;               hpPoints.setEditable(false);&#xd;&#xa;            }&#xd;&#xa;         }&#xd;&#xa;      });"/>
                       </AuxValues>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel98">
+                    <Component class="javax.swing.JLabel" name="spdTotal">
                       <Properties>
                         <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                          <Connection code="String.valueOf(getHPTotal())" type="code"/>
+                          <Connection code="String.valueOf(getSpdBase())" type="code"/>
                         </Property>
                       </Properties>
                     </Component>

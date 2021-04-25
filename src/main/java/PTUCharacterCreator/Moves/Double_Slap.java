@@ -5,6 +5,7 @@ public class Double_Slap extends Move {
 		name = "Double Slap";
 		effect = "--";
 		damageBase = 2;
+		mDamageBase = 2;
 		AC = 4;
 		frequency = "At-Will";
 		range = "Melee, 1 Target, Five Strike";

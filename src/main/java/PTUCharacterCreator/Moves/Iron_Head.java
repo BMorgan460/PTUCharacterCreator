@@ -5,6 +5,7 @@ public class Iron_Head extends Move {
 		name = "Iron Head";
 		effect = "Iron Head Flinches the target on 15+.";
 		damageBase = 8;
+		mDamageBase = 8;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, 1 Target, Dash";

@@ -5,6 +5,7 @@ public class Aqua_Tail extends Move {
 		name = "Aqua Tail";
 		effect = "--";
 		damageBase = 9;
+		mDamageBase = 9;
 		AC = 4;
 		frequency = "EOT";
 		range = "Melee, Pass";

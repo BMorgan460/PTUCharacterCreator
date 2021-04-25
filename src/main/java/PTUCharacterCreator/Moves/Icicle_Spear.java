@@ -5,6 +5,7 @@ public class Icicle_Spear extends Move {
 		name = "Icicle Spear";
 		effect = "--";
 		damageBase = 3;
+		mDamageBase = 3;
 		AC = 4;
 		frequency = "EOT";
 		range = "6, 1 Target, Five Strike";

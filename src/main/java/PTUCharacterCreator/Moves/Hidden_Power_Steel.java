@@ -5,6 +5,7 @@ public class Hidden_Power_Steel extends Move {
 		name = "Hidden Power Steel";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1";

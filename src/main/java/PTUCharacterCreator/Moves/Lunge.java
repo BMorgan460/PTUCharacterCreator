@@ -5,6 +5,7 @@ public class Lunge extends Move {
 		name = "Lunge";
 		effect = "Lunge lowers the targets Attack 1 Combat Stage on 15+.";
 		damageBase = 8;
+		mDamageBase = 8;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, 1 Target, Dash";

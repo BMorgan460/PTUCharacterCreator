@@ -5,6 +5,7 @@ public class Power_Gem extends Move {
 		name = "Power Gem";
 		effect = "--";
 		damageBase = 8;
+		mDamageBase = 8;
 		AC = 2;
 		frequency = "At-Will";
 		range = "6, 1 Target";

@@ -5,6 +5,7 @@ public class Sand_Tomb extends Move {
 		name = "Sand Tomb";
 		effect = "The target is put in a Vortex.";
 		damageBase = 4;
+		mDamageBase = 4;
 		AC = 4;
 		frequency = "Scene x2";
 		range = "5, 1 Target";

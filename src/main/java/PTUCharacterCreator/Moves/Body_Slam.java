@@ -5,6 +5,7 @@ public class Body_Slam extends Move {
 		name = "Body Slam";
 		effect = "Body Slam Paralyzes the target on 15+.";
 		damageBase = 9;
+		mDamageBase = 9;
 		AC = 2;
 		frequency = "Scene x2";
 		range = "Melee, 1 Target";

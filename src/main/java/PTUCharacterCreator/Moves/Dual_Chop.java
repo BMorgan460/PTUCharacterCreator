@@ -5,6 +5,7 @@ public class Dual_Chop extends Move {
 		name = "Dual Chop";
 		effect = "--";
 		damageBase = 5;
+		mDamageBase = 5;
 		AC = 3;
 		frequency = "EOT";
 		range = "Melee, 1 Target, Doublestrike";

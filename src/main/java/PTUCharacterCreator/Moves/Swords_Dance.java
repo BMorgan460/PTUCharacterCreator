@@ -5,6 +5,7 @@ public class Swords_Dance extends Move {
 		name = "Swords Dance";
 		effect = "Raise the user's Attack by +2 CS.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "EOT";
 		range = "Self";

@@ -5,6 +5,7 @@ public class Shock_Wave extends Move {
 		name = "Shock Wave";
 		effect = "Shock Wave cannot miss. *Grants Zapper";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 0;
 		frequency = "At-Will";
 		range = "6, 1 Target";

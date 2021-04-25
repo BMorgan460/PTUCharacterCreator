@@ -5,6 +5,7 @@ public class Backswing extends Move {
 		name = "Backswing";
 		effect = "Limitation: Large Melee Weapons Only";
 		damageBase = 7;
+		mDamageBase = 7;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, 2 Targets";

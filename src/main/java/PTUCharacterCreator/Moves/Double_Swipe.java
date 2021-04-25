@@ -5,6 +5,7 @@ public class Double_Swipe extends Move {
 		name = "Double Swipe";
 		effect = "--";
 		damageBase = 4;
+		mDamageBase = 4;
 		AC = 2;
 		frequency = "EOT";
 		range = "WR, 2 Targets, or WR, 1 Target, Double Strike";

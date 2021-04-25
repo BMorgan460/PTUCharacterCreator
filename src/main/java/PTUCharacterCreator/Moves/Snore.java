@@ -5,6 +5,7 @@ public class Snore extends Move {
 		name = "Snore";
 		effect = "Snore Flinches all legal targets on 15+. Snore may only be used by Sleeping users.";
 		damageBase = 5;
+		mDamageBase = 5;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1, Sonic";

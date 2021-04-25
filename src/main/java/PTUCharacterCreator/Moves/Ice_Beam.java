@@ -5,6 +5,7 @@ public class Ice_Beam extends Move {
 		name = "Ice Beam";
 		effect = "Ice Beam Freezes on 19+.";
 		damageBase = 9;
+		mDamageBase = 9;
 		AC = 2;
 		frequency = "EOT";
 		range = "6, 1 Target";

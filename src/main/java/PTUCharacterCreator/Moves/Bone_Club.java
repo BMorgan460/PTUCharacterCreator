@@ -5,6 +5,7 @@ public class Bone_Club extends Move {
 		name = "Bone Club";
 		effect = "Bone Club Flinches the target on 18+.";
 		damageBase = 7;
+		mDamageBase = 7;
 		AC = 5;
 		frequency = "At-Will";
 		range = "Melee, 1 Target";

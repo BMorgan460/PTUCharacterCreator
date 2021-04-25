@@ -5,6 +5,7 @@ public class Hold_Hands extends Move {
 		name = "Hold Hands";
 		effect = "Both the user and the target become Cheered. They may give up the Cheered condition when making a Save Check to roll twice and take the best result.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "Scene x2";
 		range = "Melee, 1 Target";

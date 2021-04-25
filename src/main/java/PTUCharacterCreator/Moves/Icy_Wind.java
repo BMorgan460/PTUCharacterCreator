@@ -5,6 +5,7 @@ public class Icy_Wind extends Move {
 		name = "Icy Wind";
 		effect = "All Legal Targets have their Speed lowered 1 Combat Stage.";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 3;
 		frequency = "EOT";
 		range = "Cone 2";

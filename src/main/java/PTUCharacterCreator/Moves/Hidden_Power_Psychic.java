@@ -5,6 +5,7 @@ public class Hidden_Power_Psychic extends Move {
 		name = "Hidden Power Psychic";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1";

@@ -5,6 +5,7 @@ public class Leaf_Blade extends Move {
 		name = "Leaf Blade";
 		effect = "Leaf Blade is a Critical Hit on 18+.";
 		damageBase = 9;
+		mDamageBase = 9;
 		AC = 2;
 		frequency = "EOT";
 		range = "Melee, Pass";

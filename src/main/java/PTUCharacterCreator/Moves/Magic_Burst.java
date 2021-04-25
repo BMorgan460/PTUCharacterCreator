@@ -5,6 +5,7 @@ public class Magic_Burst extends Move {
 		name = "Magic Burst";
 		effect = "Foes hit by Magic Burst can’t make Attacks of Opportunity for 1 full round. Limitation: Melee Weapons Only";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "Scene x2";
 		range = "Burst 1, Friendly";

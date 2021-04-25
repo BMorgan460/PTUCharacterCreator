@@ -5,6 +5,7 @@ public class Magnet_Bomb extends Move {
 		name = "Magnet Bomb";
 		effect = "Magnet Bomb cannot miss. *Grants Magnetic";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 0;
 		frequency = "EOT";
 		range = "8, 1 Target";

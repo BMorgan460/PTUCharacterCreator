@@ -5,6 +5,7 @@ public class Uproar extends Move {
 		name = "Uproar";
 		effect = "All Pokemon and Trainers within 5 meters of the user are cured of Sleep.";
 		damageBase = 5;
+		mDamageBase = 5;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1, Spirit Surge, Sonic";

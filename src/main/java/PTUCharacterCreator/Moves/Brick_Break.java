@@ -5,6 +5,7 @@ public class Brick_Break extends Move {
 		name = "Brick Break";
 		effect = " Light Screen and Reflect may not be activated in response to Brick Break.";
 		damageBase = 8;
+		mDamageBase = 8;
 		AC = 2;
 		frequency = "At-Will";
 		range = "Melee, 1 Target";

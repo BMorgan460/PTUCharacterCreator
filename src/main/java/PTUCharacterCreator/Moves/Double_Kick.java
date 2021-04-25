@@ -5,6 +5,7 @@ public class Double_Kick extends Move {
 		name = "Double Kick";
 		effect = "--";
 		damageBase = 3;
+		mDamageBase = 3;
 		AC = 3;
 		frequency = "At-Will";
 		range = "Melee, 1 Target, Double Strike";

@@ -5,6 +5,7 @@ public class Hidden_Power_Bug extends Move {
 		name = "Hidden Power Bug";
 		effect = "--";
 		damageBase = 6;
+		mDamageBase = 6;
 		AC = 2;
 		frequency = "EOT";
 		range = "Burst 1";

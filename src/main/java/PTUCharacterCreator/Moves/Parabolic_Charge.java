@@ -5,6 +5,7 @@ public class Parabolic_Charge extends Move {
 		name = "Parabolic Charge";
 		effect = "The user gains HP equal to half of the total damage the user dealt to all legal targets.";
 		damageBase = 5;
+		mDamageBase = 5;
 		AC = 4;
 		frequency = "Scene";
 		range = "Cone 2";

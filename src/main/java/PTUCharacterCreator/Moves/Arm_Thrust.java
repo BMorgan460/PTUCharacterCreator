@@ -5,6 +5,7 @@ public class Arm_Thrust extends Move {
 		name = "Arm Thrust";
 		effect = "--";
 		damageBase = 2;
+		mDamageBase = 2;
 		AC = 4;
 		frequency = "EOT";
 		range = "Melee, 1 Target, Five Strike";

@@ -5,6 +5,7 @@ public class Grasswhistle extends Move {
 		name = "Grasswhistle";
 		effect = "The target falls Asleep.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 6;
 		frequency = "Scene x2";
 		range = "6, 1 Target, Sonic";

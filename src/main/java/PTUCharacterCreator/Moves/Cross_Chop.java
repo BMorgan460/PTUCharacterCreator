@@ -5,6 +5,7 @@ public class Cross_Chop extends Move {
 		name = "Cross Chop";
 		effect = "Cross Chop is a Critical Hit on 16+.";
 		damageBase = 10;
+		mDamageBase = 10;
 		AC = 4;
 		frequency = "Scene x2";
 		range = "Melee, 1 Target";

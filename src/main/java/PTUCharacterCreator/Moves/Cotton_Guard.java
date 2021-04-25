@@ -5,6 +5,7 @@ public class Cotton_Guard extends Move {
 		name = "Cotton Guard";
 		effect = "Raise the user’s Defense 3 Combat Stages.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "Scene";
 		range = "Self";

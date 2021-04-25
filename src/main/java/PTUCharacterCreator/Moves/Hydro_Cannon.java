@@ -5,6 +5,7 @@ public class Hydro_Cannon extends Move {
 		name = "Hydro Cannon";
 		effect = "--";
 		damageBase = 15;
+		mDamageBase = 15;
 		AC = 4;
 		frequency = "Daily x2";
 		range = "Line 9, Smite, Exhaust";

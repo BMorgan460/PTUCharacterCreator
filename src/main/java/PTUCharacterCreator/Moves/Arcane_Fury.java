@@ -5,6 +5,7 @@ public class Arcane_Fury extends Move {
 		name = "Arcane Fury";
 		effect = "Arcane Fury’s Targets become Vulnerable on 19+.";
 		damageBase = 3;
+		mDamageBase = 3;
 		AC = 3;
 		frequency = "EOT";
 		range = "Cone 2";

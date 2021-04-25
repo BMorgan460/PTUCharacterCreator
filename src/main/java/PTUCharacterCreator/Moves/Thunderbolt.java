@@ -5,6 +5,7 @@ public class Thunderbolt extends Move {
 		name = "Thunderbolt";
 		effect = "Thunderbolt Paralyzes the target on 19+.";
 		damageBase = 9;
+		mDamageBase = 9;
 		AC = 2;
 		frequency = "EOT";
 		range = "4, 1 Target";

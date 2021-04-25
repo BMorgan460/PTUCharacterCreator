@@ -2,6 +2,7 @@ package PTUCharacterCreator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 /**
  * Class used to store Edges
@@ -58,10 +59,18 @@ public abstract class Edge {
     
     @Override
     public boolean equals(Object o){
-        if(o.getClass() == Edge.class){
+        if(o.getClass() == this.getClass()){
             Edge m = (Edge) o;
+            
             return this.name.equals(m.getName());
         }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 37 * hash + Objects.hashCode(this.name);
+        return hash;
     }
 }

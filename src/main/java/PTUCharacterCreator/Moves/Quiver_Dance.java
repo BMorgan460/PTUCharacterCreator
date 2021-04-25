@@ -5,6 +5,7 @@ public class Quiver_Dance extends Move {
 		name = "Quiver Dance";
 		effect = "Raise the user's Special Attack, Special Defense, and Speed by +1 CS each.";
 		damageBase = 0;
+		mDamageBase = 0;
 		AC = 0;
 		frequency = "Scene x2";
 		range = "Self";

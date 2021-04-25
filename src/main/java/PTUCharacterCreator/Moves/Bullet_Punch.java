@@ -5,6 +5,7 @@ public class Bullet_Punch extends Move {
 		name = "Bullet Punch";
 		effect = "--";
 		damageBase = 4;
+		mDamageBase = 4;
 		AC = 2;
 		frequency = "At-Will";
 		range = "Melee, 1 Target, Priority";
