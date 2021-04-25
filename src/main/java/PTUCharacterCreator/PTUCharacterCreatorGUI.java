@@ -335,7 +335,9 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         genJSON = new javax.swing.JButton();
         jSeparator20 = new javax.swing.JSeparator();
         jLabel56 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        Save = new javax.swing.JButton();
+        load = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
         jLabel58 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
@@ -816,6 +818,11 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(216, 72));
 
         jButton1.setText("Create Character");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Level-Up");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -856,6 +863,11 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         jLabel86.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton6.setText("Import Picture");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);
@@ -2751,7 +2763,21 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
         jLabel56.setText("Trainer");
 
-        jLabel57.setText("Pokemon");
+        jLabel10.setText("Save for later");
+
+        Save.setText("Save");
+        Save.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SaveActionPerformed(evt);
+            }
+        });
+
+        load.setText("Load");
+        load.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loadActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
         jPanel29.setLayout(jPanel29Layout);
@@ -2773,9 +2799,17 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                         .addComponent(jLabel56)))
                 .addGap(66, 66, 66)
                 .addComponent(jSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(164, 164, 164)
-                .addComponent(jLabel57)
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel29Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel10)
+                        .addGap(130, 130, 130))
+                    .addGroup(jPanel29Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(Save)
+                        .addGap(18, 18, 18)
+                        .addComponent(load)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel29Layout.setVerticalGroup(
             jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2793,7 +2827,12 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
                             .addComponent(genJSON))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtAreaJSON))
-                    .addComponent(jLabel57))
+                    .addGroup(jPanel29Layout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGap(59, 59, 59)
+                        .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Save)
+                            .addComponent(load))))
                 .addContainerGap(72, Short.MAX_VALUE))
         );
 
@@ -2812,7 +2851,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             .addGroup(jPanel16Layout.createSequentialGroup()
                 .addGap(329, 329, 329)
                 .addComponent(jLabel58)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(356, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane7)
@@ -2896,7 +2935,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-
+        JOptionPane.showMessageDialog(null, "NOT IMPLEMENTED YET");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void effect1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_effect1ActionPerformed
@@ -3051,8 +3090,9 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
             if(t.addMove(moveName1.getText().replace(" ", "_").replace("'", ""),1)){
-                moveName2.setEnabled(true);
+                moveName2.setEditable(true);
             }
+            
         }
     }//GEN-LAST:event_moveName1KeyPressed
 
@@ -3076,8 +3116,8 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private void moveName2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moveName2KeyPressed
         // TODO add your handling code here:
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
-            if(t.addMove(moveName2.getText().replace(" ", "_").replace("'", ""),1)){
-                moveName3.setEnabled(true);
+            if(t.addMove(moveName2.getText().replace(" ", "_").replace("'", ""),2)){
+                moveName3.setEditable(true);
             }
         }
     }//GEN-LAST:event_moveName2KeyPressed
@@ -3097,8 +3137,8 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private void moveName3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_moveName3KeyPressed
         // TODO add your handling code here:
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
-            if(t.addMove(moveName3.getText().replace(" ", "_").replace("'", ""),1)){
-                moveName4.setEnabled(true);
+            if(t.addMove(moveName3.getText().replace(" ", "_").replace("'", ""),3)){
+                moveName4.setEditable(true);
             }
         }
     }//GEN-LAST:event_moveName3KeyPressed
@@ -3138,7 +3178,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
             if(t.addAbility(abilityName1.getText().replace(" ", "_").replace("'", ""),1)){
-                abilityName2.setEnabled(true);
+                abilityName2.setEditable(true);
             }
         }
     }//GEN-LAST:event_abilityName1KeyPressed
@@ -3202,6 +3242,26 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
             updateStats();
         }
     }//GEN-LAST:event_spdPointsKeyPressed
+
+    private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "NOT IMPLEMENTED YET");
+    }//GEN-LAST:event_SaveActionPerformed
+
+    private void loadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "NOT IMPLEMENTED YET");
+    }//GEN-LAST:event_loadActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "NOT IMPLEMENTED YET");
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "NOT IMPLEMENTED YET");
+    }//GEN-LAST:event_jButton1ActionPerformed
     
     private void updateStats(){
         int[] temp = t.getStats();
@@ -3327,6 +3387,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Level;
+    private javax.swing.JButton Save;
     private javax.swing.JButton ability1;
     private javax.swing.JButton ability2;
     private javax.swing.JButton ability3;
@@ -3432,6 +3493,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox62;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel134;
@@ -3463,7 +3525,6 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
@@ -3588,6 +3649,7 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jsonTab;
     private javax.swing.JTextArea jsonTextArea;
     private javax.swing.JTextField level;
+    private javax.swing.JButton load;
     private javax.swing.JLabel medEduRank;
     private javax.swing.JTextField miscExp;
     private javax.swing.JTextField moveName1;

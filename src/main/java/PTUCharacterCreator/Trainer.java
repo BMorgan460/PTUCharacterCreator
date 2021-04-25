@@ -237,11 +237,21 @@ public class Trainer {
                 return true;
             }
         }
+        for(Feature feat : bFeatures){
+            if(feat.getName().equals(feature)){
+                return true;
+            }
+        }
         return false;
     }
     
     public boolean hasEdge(String edge){
         for(Edge e : edges){
+            if(e.getName().equals(edge)){
+                return true;
+            }
+        }
+        for(Edge e : bEdges){
             if(e.getName().equals(edge)){
                 return true;
             }
