@@ -3272,6 +3272,8 @@ public class PTUCharacterCreatorGUI extends javax.swing.JFrame {
         spDefTotal.setText("" + (temp[4] + getSpDefBase()));
         spdTotal.setText("" + (temp[5] + getSpdBase()));
         statsLeft.setText("" + t.getStatPointsRemaining());
+        usedFeats.setText("Features Used: " + t.getFeaturesTotal());
+        remainingFeats.setText("Features Remaining: " + t.getFeaturesRemaining());
     }
     private void showAbility(Ability ability){
         String temp = "Name: " + ability.getName() + "\n";

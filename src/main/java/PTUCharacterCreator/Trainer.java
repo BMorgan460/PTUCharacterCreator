@@ -309,7 +309,7 @@ public class Trainer {
                 String input = "";
                 do{
                     input = JOptionPane.showInputDialog(null, "Attack or Special Attack?");
-                }while(!input.equals("Attack") || !input.equals("Special Attack"));
+                }while(!input.equals("Attack") && !input.equals("Special Attack"));
                 switch (input){
                     case "Attack":
                         fAtk++;
@@ -387,7 +387,7 @@ public class Trainer {
                 String input = "";
                 do{
                     input = JOptionPane.showInputDialog(null, "Attack or Special Attack?");
-                }while(!input.equals("Attack") || !input.equals("Special Attack"));
+                }while(!input.equals("Attack") && !input.equals("Special Attack"));
                 switch (input){
                     case "Attack":
                         fAtk--;
@@ -664,11 +664,11 @@ public class Trainer {
         int i = 1;
         for(; i <= features.size(); i++){
             Feature feat = features.get(i - 1);
-            json += String.format("\"Feat%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\",\"Target\":\"%s\"},\n", i, feat.getName(), feat.getFreq(), feat.getEffect(), feat.getTarget());
+            json += String.format("\"Feature%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\",\"Target\":\"%s\"},\n", i, feat.getName(), feat.getFreq(), feat.getEffect(), feat.getTarget());
         }
         for(int j = 0; j < bFeatures.size(); j++){
             Feature feat = bFeatures.get(j);
-            json += String.format("\"Feat%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\",\"Target\":\"%s\"},\n", i + j, feat.getName(), feat.getFreq(), feat.getEffect(), feat.getTarget());
+            json += String.format("\"Feature%d\":{\"Name\":\"%s\",\"Freq\":\"%s\",\"Info\":\"%s\",\"Target\":\"%s\"},\n", i + j, feat.getName(), feat.getFreq(), feat.getEffect(), feat.getTarget());
         }
         return json;
     }
